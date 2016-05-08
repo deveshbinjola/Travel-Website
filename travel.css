@@ -1,7 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
-.h2{
-    text-align: center;
+body{
+    background-image: url("b.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.myPanel1{
+    border: 0px;
 }
 
 .myPanel{
@@ -20,7 +25,8 @@
 }
 
 .myPanel .body{
-    padding: 10px 10px;
+
+    padding: 0px 0px;
 }
 
 .myPanel .showOnHover{
@@ -36,16 +42,6 @@
     display: inline-block;
 }
 
-.primary {
-    color: green;
-}
-
-p.primary {
-    color: black;
-    font-size: 250%;
-    text-align: center;
-    font-family: "ziperhead";
-}
 
 p {
     color: black;
@@ -54,18 +50,11 @@ p {
     font-family: "ziperhead";
 }
 
-#header {
-    background-color:white;
-    color:black;
-    text-align:center;
-    padding:5px;
-}
-
-.right {
-    float: left;
-    width: 300px;
-    border: 3px solid #73AD21;
-    padding: 10px;
+heading {
+    color: black;
+    font-size: 250%;
+    text-align: center;
+    font-family: "Futura";
 }
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -178,15 +167,6 @@ input:checked + .slide-container .nav label {
 .nav-dots .nav-dot:hover {
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0.8);
-}
-
-input#img-1:checked ~ .nav-dots label#img-dot-1,
-input#img-2:checked ~ .nav-dots label#img-dot-2,
-input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4,
-input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
-	background: rgba(0, 0, 0, 0.8);
 }
 
 .copyright{
