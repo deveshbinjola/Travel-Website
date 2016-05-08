@@ -78,6 +78,10 @@ p {
     position: relative;
 }
 
+
+.show{
+    vertical-align: left;
+}
 .slides * {
     user-select: none;
     -ms-user-select: none;
