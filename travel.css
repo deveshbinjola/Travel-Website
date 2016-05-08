@@ -16,11 +16,11 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     color: #687D6D;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .myPanel .body{
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .myPanel .showOnHover{
