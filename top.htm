@@ -13,8 +13,11 @@
 </head>
 
 <body>
-<p id="main" class="primary other"><b>Free Travel: Your personal guide to best travel</b></p>
-<header class ="navbar-inverse" role ="banner">
+
+<div id="container">
+    
+<div id="header" class ="navbar-inverse" >
+
 <div class ="container">
 
   <div class="container-fluid">
@@ -35,7 +38,8 @@
         <li><a href="students.html">Students <span class="sr-only">(current)</span></a></li>
         <li><a href="beginners.html">Beginners</a></li>
         <li class="dropdown">
-          <li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Credit Cards <span class="caret"></span></a></li>
+          <li class="active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Credit Cards <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="airline.html">Airline Miles</a></li>
             <li role="separator" class="divider"></li>
@@ -45,8 +49,9 @@
             
           </ul>
         </li>
+        </li>
         <li class="dropdown">
-          <li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel Reports <span class="caret"></span></a></li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel Reports <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Recent Trip</a></li>
             <li role="separator" class="divider"></li>
@@ -72,18 +77,49 @@
   </div><!-- /.container-fluid -->
 </nav>
 </div>
-  </header>
-<br>
+</div>
+
+<div class ="col-sm-8 col-xs-12">
+  <div class ="myPanel">
+    <a href="top.htm"><div class ="heading"><p> Top Credit Cards </p></div></a>
+    <div class ="body">
+        <a href="https://creditcards.chase.com/a1/sapphire/apply50">
+        <div class="cards"><img src="csp.png" align="left" alt="Card Type" width="80" /><b> Chase Sapphire Preferred</b><br />
+        50,000 + 5,000 Ultimate Rewards Points</div>
+        </a>
+        <hr>
+        <a href="#">
+        <div class="cards"><img src="tkp.png" align="left" alt="Card Type" width="80" /><b> Thank You Premier </b><br />
+        50,000 Thank You Points</div>
+        </a>
+        <hr>
+
+        <a href="#">
+        <div class="cards"><img src="cfu.png" align="left" alt="Card Type" width="80" /><b>Chase Freedom Unlimited</b><br />
+        15,000 Ultimate Rewards Points</div>
+        </a>
+        <hr>
+        
+        <a href="#">
+        <div class="cards"><img src="ihgr.png" align="left" alt="Card Type" width="80" /><b>IHG Rewards Card</b><br />
+        70,000 IHG Points</div>
+        </a>
+        <hr>
+
+
+        <a href="#">
+        <div class="cards"><img src="hha.png" align="left" alt="Card Type" width="80" /><b>Hilton Honors American Express Card</b><br />
+        75,000 Hilton Honors Points</div>
+        </a>
+
+  </div>
+  </div>
+</div>
 
 
 
-
-
-
-
-
-
-<footer class ="navbar-inverse" role ="banner">
+</div>
+<div id="footer" class ="navbar-inverse">
       <div class="container">
         <ul class="nav navbar-nav">
           <li><a class="navbar-brand" href="index.html">Home</a></li>
@@ -102,13 +138,12 @@
             <li><a href="#">Terms of Use</a></li>
           </ul>
 
-
           <div class ="followus">
           <a target="_blank" title="follow me on twitter" href="http://www.twitter.com/freetravel"><img alt="follow me on twitter" src="twitter.png" border=0></a>
           <a target="_blank" title="follow me on twitter" href="http://www.facebook.com/freetravel"><img alt="follow me on twitter" src="facebook.png" border=0></a>
           </div>
       </div>
-  </footer>
+  </div>
 
 <script src "jquery.js"> </script>
 <script>
@@ -125,5 +160,7 @@
     <script src="js/bootstrap.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+ </div>
 </body>
 </html>
