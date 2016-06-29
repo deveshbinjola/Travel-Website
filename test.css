@@ -41,3 +41,8 @@
     color: white;
     padding: 10px;
 }
+
+.jumbotron{
+    background-image: url('img1.jpg');
+    /*background-size: cover;*/
+}
