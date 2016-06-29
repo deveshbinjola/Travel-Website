@@ -1,9 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-    background-image: url("background.jpg");
+    /*background-image: url("background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 .myPanel1{
     border: 0px;
@@ -26,7 +26,7 @@ body{
 
 .myPanel .body{
 
-    padding: 5px 0px 5px 0px;
+    padding: 5px 5px 5px 5px;
 }
 
 .myPanel .showOnHover{
