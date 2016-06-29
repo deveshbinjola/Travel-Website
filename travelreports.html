@@ -3,16 +3,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Travel Reports</title>
  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+ <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="test.css">
+ <script src="travel.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#my-navbar">
 
-   <!-- Navbar -->
+  <!-- Navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
       <div class="container">
         <div class="navbar-header">
@@ -29,8 +33,16 @@
         
           <ul class="nav navbar-nav">
             <li><a href="students.html">Students/Beginners</a> 
-            <li><a href="top.htm">Credit Cards</a></li>
-
+            <li class="dropdown">
+              <a href="top.htm" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Credit Cards <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="airline.html">Airline Miles</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="cashback.html">Cashback</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="points.html">Points & Miles</a></li>  
+                </ul>
+            </li>
       <li><a href="travelreports.html">Travel Reports</a></li>
         <li><a href="about.html">About Us</a></li>
       </ul>
@@ -43,11 +55,9 @@
         <a href="" ><button type="submit" class="btn btn-primary">Submit</button></a>
       </form>
       </ul>
-          
-        </div>
-
       </div><!-- End Container-->
     </nav><!-- End navbar -->
+
 
     <!-- jumbotron-->
     <!-- About-->

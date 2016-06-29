@@ -3,15 +3,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>About Us</title>
  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+ <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="test.css">
+ <script src="travel.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#my-navbar">
- <!-- Navbar -->
+
+  <!-- Navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
       <div class="container">
         <div class="navbar-header">
@@ -28,8 +33,16 @@
         
           <ul class="nav navbar-nav">
             <li><a href="students.html">Students/Beginners</a> 
-            <li><a href="top.htm">Credit Cards</a></li>
-
+            <li class="dropdown">
+              <a href="top.htm" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Credit Cards <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="airline.html">Airline Miles</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="cashback.html">Cashback</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="points.html">Points & Miles</a></li>  
+                </ul>
+            </li>
       <li><a href="travelreports.html">Travel Reports</a></li>
         <li><a href="about.html">About Us</a></li>
       </ul>
@@ -42,11 +55,10 @@
         <a href="" ><button type="submit" class="btn btn-primary">Submit</button></a>
       </form>
       </ul>
-          
-        </div>
-
       </div><!-- End Container-->
     </nav><!-- End navbar -->
+
+ 
     <!-- jumbotron-->
     <!-- About-->
     <div class="jumbotron">
@@ -58,6 +70,32 @@
  <!-- End About-->
 
 
+  <div class="row row-padded row-bordered row-centered">
+    <div class="col-sm-12">
+      <div class="row m-b-lg">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <h3><strong>From industry leaders</strong></h3>
+          <h4 class="m-b-lg">Bootstrap Themes are built by the folks who not only brought you frameworks like <a href="getbootstrap.com" target="_blank">Bootstrap</a>, <a href="http://getskeleton.com/" target="_blank">Skeleton</a>, and <a href="http://goratchet.com/" target="_blank">Ratchet</a>, but have years of experience at innovative companies like Twitter, GitHub, Medium, and others.</h4>
+        </div>
+      </div>
+     
+        <div class="col-md-4 m-b-lg">
+          <div class="panel panel-default panel-profile m-b-0">
+            <div class="panel-heading" style="background-image: url(//cdn.shopify.com/s/files/1/0691/5403/t/123/assets/insta-1.jpg?15069231758551200282);"></div>
+            <div class="panel-body text-center">
+              <img class="panel-profile-img" src="//cdn.shopify.com/s/files/1/0691/5403/t/123/assets/avatar-mdo.jpg?15069231758551200282">
+              <h5 class="panel-title">Mark Otto</h5>
+              <p class="m-b">Design at GitHub. Creator of Bootstrap. Previously at Twitter. Huge nerd.</p>
+              <a href="//github.com/mdo" target="_blank" class="btn btn-primary-outline btn-sm m-b">
+                <span class="icon icon-add-user"></span> View GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </div>
 
 
 <!-- Gallery -->
@@ -76,14 +114,14 @@
           </ol>
           <div class="carousel-inner">
             <div class="item active">
-              <img src="img1.jpg" alt="Text of the image">
+              <img src="img5.jpg" alt="Text of the image">
               <div class="carousel-caption">
                 <h3>Highway heading</h3>
                 <p>This is the caption</p>
               </div>
             </div>
             <div class="item">
-              <img src="img2.jpg" alt="Text of the image">
+              <img src="img6.jpg" alt="Text of the image">
               <div class="carousel-caption">
                 <h3>River heading</h3>
                 <p>This is the caption</p>
