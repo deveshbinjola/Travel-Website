@@ -1,54 +1,75 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Airline Miles</title>
- <!-- Latest compiled and minified CSS -->
+<title>The Travel Student</title>
+<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="test.css">
- <script src="travel.js"></script>
+<!-- Bootstrap core CSS -->
+    <link href="CSS/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="test.css">
+
+    <script src="travel.js"></script>
 </head>
 
 <body>
 
-  <!-- Navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="navbar-brand">Points Traveller</a>
-        </div><!-- Navbar Header-->
-        <div class="collapse navbar-collapse" id="navbar-collapse">  
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="students.html">Students/Beginners</a> 
-            <li class="dropdown">
-              <a href="top.htm" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Credit Cards <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="airline.html">Airline Miles</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="cashback.html">Cashback</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="points.html">Points & Miles</a></li>  
-                </ul>
-                  <li><a href="travelreports.html">Travel Reports</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                </ul>
-      </div><!-- End Container-->
-    </nav><!-- End navbar -->
-    
-    <!-- jumbotron-->
-    <!-- About-->
-    <div class="jumbotron">
-      <div class="container text-center">
-        <h1>About Us</h1>
-        <p>The main purpose of this website is to tell people how they can Travel around the world at a minimum price using points and miles and other useful offers. Also helping out students in building and understanding credit and do things that you would have never imagined.</p>
-      </div><!-- End container -->
-    </div><!-- End jumbotron-->
+<!--header-->
+    <header class="airline-header">
+        <div class="bg-color">
+            <!--nav-->
+            <nav class="nav navbar-default">
+                <div class="container bor-btm">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                            <a href="index.html" class="navbar-brand">The Travel Student</a>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="students.html">Students/Beginners</a></li>
+                            <li class="dropdown" >
+                            <a href="top.htm" data-toggle="dropdown" role="button" >Credit Cards <span class="caret"></span></a>
+                             <ul class="dropdown-menu">
+                             <li><a href="airline.html">Airline Miles</a></li>
+                             <li role="separator" class="divider"></li>
+                            <li><a href="cashback.html">Cashback</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="points.html">Points & Miles</a></li>  
+                            </ul>
+                            </li>
+                            <li><a href="travelreports.html">Travel Reports</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--/ nav-->
+            <div class="container text-center">
+                <div class="wrapper">
+                    <!--<h2 class="top-title">Welcome To</h2>-->
+                    <h3 class="title">About Us</h3>
+                    <p class="para">Two purposes of making this website:<br>
+                    The first purpose is to help people travel around the world for a minimum price.<br>
+                    The other reason is to help out students in building and understanding credit and do things that you would have never imagined.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/ header-->
  <!-- End About-->
+
 
 
 <!-- Gallery -->
@@ -173,7 +194,7 @@
 
 <!-- call to action -->
   <section>
-    <div class="well">
+    <div id="subscribe">
       <div class="container text-center">
         <h3>Subscribe for regular update</h3>
         <p>Enter your name and email</p>
@@ -196,51 +217,53 @@
     </div><!-- end well-->
   </section><!-- Call to action -->
 
+    <!-- Footer -->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>The<span>TravelStudent</span></h3>
 
+        <p class="footer-links">
+          <a href="index.hrml">Home</a>
+          <a href="students.html">Beginners  </a>
+          <a href="top.htm"> Credit Cards  </a>
+          <a href="travelreports.html"> Travel Reports  </a>       
+          <a href="about.html"> About Us</a>
+        </p>
 
-
-<!-- Footer -->
-<footer>   
-<div class ="footer">
-<div class ="navbar-inverse">
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li><a class="navbar-brand" href="index.html">Home</a></li>
-          <li><a href="students.html">Students/Beginners</a></li>
-          <li><a href="top.htm">Credit Cards </a></li>
-          <li><a href="travelreports.html">Travel Reports</a></li>
-          <li><a href="about.html">About Us</a></li>
-          </ul>
-
-          <div class ="copyright">&copy; PointsTraveller.com - All Rights Reserved.</div>
-          <br>
-          <ul class="nav navbar-nav">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">California Privacy Rights</a></li>
-            <li><a href="#">Terms of Use</a></li>
-          </ul>
-
-          <div class ="followus">
-          <a target="_blank" title="follow me on twitter" href="http://www.twitter.com/freetravel"><img alt="follow me on twitter" src="twitter.png" border=0></a>
-          <a target="_blank" title="follow me on twitter" href="http://www.facebook.com/freetravel"><img alt="follow me on twitter" src="facebook.png" border=0></a>
-          </div>
-
+        <p class="footer-company-name">The Travel Student&copy; 2016</p>
       </div>
-  </div>
-</div>
-</footer>
 
+      <div class="footer-center">
+      <p class="footer-company-about">
+        <span>Follow Us</span>
+          <a href="http://www.facebook.com/thetravelstudent"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.twitter.com/thetravelstudent"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.instagram.com/thetravelstudent"><i class="fa fa-instagram"></i></a>
+          <a href="http://www.pinterest.com/thetravelstudent"><i class="fa fa-pinterest"></i></a>
+        </p><br>
+          <p class="footer-company-about">
+          <span>Our Friends</span>
+     
+        </p>
+      </div>
+      </div>
 
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Disclaimer</span>
+          The opinions expressed here are author's alone, not those of any bank, credit card issuer, airlines or hotel chain, and have not been reviewed, approved or otherwise endorsed by any of these entities.
+        </p>
+      </div>
+
+    </footer>
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 </body>
 </html>

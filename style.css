@@ -1,4 +1,4 @@
-body, html {
+body{
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
@@ -8,6 +8,7 @@ body, html {
 }
 h1 {
 	font-weight: 700;
+	color: #fff;
 }
 h1 strong {
 	font-weight: 900;
@@ -18,7 +19,14 @@ h2 {
 	margin: 0;
 	color: #2c3e50;
 }
-h3, h4 {
+h3{
+	text-transform: uppercase;
+	line-height: 20px;
+	margin: 0;
+	color: #fff;
+}
+
+h4 {
 	font-size: 16px;
 	font-weight: 700;
 }
@@ -32,9 +40,6 @@ p.intro {
 	margin: 12px 0 0;
 	line-height: 24px;
 	font-family: 'Open Sans', sans-serif;
-}
-a {
-	color: #fff;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -65,7 +70,10 @@ ul, ol {
 	webkit-padding: 0;
 	moz-padding: 0;
 }
-
+.navbar-inverse{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
 /* Home Section */
 .intro {
 	display: table;
@@ -105,6 +113,66 @@ ul, ol {
 	margin: 0 auto;
 	margin-bottom: 30px;
 	border: 0;
+}
+
+/*  Header  */
+.navbar-default {
+    background-color: transparent;
+}
+.main-header
+{
+	background: url(Image/devesh2.jpg) no-repeat;
+	background-size: cover;
+	max-height: 650px;
+}
+.bg-color
+{
+	background-color: RGBA(0, 0, 0, 0.41);
+}
+.bor-btm
+{
+    top: 0;
+    border-width: 0 0 1px;
+    padding: 40px 0px;
+}
+.nav > li > a {
+    padding: 0px;
+}
+.navbar-brand
+{
+	padding: 0px;
+	height: inherit;
+	font-family: 'Lato', sans-serif;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #FFD34E;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+	color: #FFD34E;
+}
+
+.para
+{
+	font-size: 20px;
+	color: #fff;
+	opacity: 1;
+	padding-top: 25px;
+
 }
 
 
@@ -189,6 +257,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	background-size: cover;
 	background-attachment: fixed;
 }
+
 
 
 

@@ -1,0 +1,159 @@
+/**media Queries**/
+.navbar-default {
+    background-color: transparent;
+}
+.home-header
+{
+	background: url(Image/img5.jpg) no-repeat;
+	background-size: cover;
+	max-height: 650px;
+}
+.student-header
+{
+	background: url(Image/img3.jpg) no-repeat;
+	background-size: cover;
+	max-height: 650px;
+}
+
+.reports-header
+{
+	background: url(Image/img6.jpg) no-repeat;
+	background-size: cover;
+	max-height: 650px;
+}
+.about-header
+{
+	background: url(Image/img13.jpg) no-repeat;
+	background-size: cover;
+	max-height: 650px;
+}
+.airline-header
+{
+	background: url(Image/img11.jpg) no-repeat;
+	background-size: cover;
+	max-height: 650px;
+}
+.cashback-header
+{
+	background: url(Image/img1.jpg) no-repeat;
+	background-size: cover;
+	max-height: 650px;
+}
+.points-header
+{
+	background: url(Image/img2.jpg);
+	background-size: cover;
+	max-height: 650px;
+}
+.cards-header
+{
+	background: url(Image/cards.jpg) no-repeat;
+	background-size: cover;
+	max-height: 650px;
+}
+.bg-color
+{
+	background-color: RGBA(0, 0, 0, 0.41);
+}
+.bor-btm
+{
+    top: 0;
+    border-width: 0 0 1px;
+    padding: 40px 0px;
+}
+.nav > li > a {
+    padding: 0px;
+}
+.navbar-brand
+{
+	padding: 0px;
+	height: inherit;
+	font-family: 'Lato', sans-serif;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #FFD34E;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+	color: #FFD34E;
+}
+.wrapper
+{
+	padding: 90px 0px 130px;
+}
+.top-title
+{
+	z-index: 5;
+	font-size: 27px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 38px;
+	letter-spacing: 3px;
+	opacity: 1;
+	text-transform: uppercase;
+}
+.sub-title
+{
+	font-size: 40px;
+	font-weight: 300;
+	color: #fff;
+	line-height: 71px;
+	letter-spacing: 3px;
+	opacity: 1;
+	text-transform: uppercase;
+
+}
+.title
+{
+	font-size: 93px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 88px;
+	letter-spacing: 3px;
+	opacity: 1;
+	text-transform: uppercase;
+}
+
+.para
+{
+	font-size: 20px;
+	color: #fff;
+	opacity: 1;
+	padding-top: 25px;
+
+}
+.btn-submit
+{
+    background: #FFD34E;
+    border: 0px;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    font-weight: normal;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    margin-top: 25px;
+}

@@ -1,114 +1,79 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Points Traveller</title>
+<title>The Travel Student</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-
 <!-- Bootstrap core CSS -->
     <link href="CSS/bootstrap.min.css" type="text/css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="CSS/ie10-viewport-bug-workaround.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="test1.css">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="JS/ie-emulation-modes-warning.js"></script>
-    <link rel="stylesheet" type="text/css" href="test.css">
     <script src="travel.js"></script>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="navbar-brand">Points Traveller</a>
-        </div><!-- Navbar Header-->
-        <div class="collapse navbar-collapse" id="navbar-collapse">  
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="students.html">Students/Beginners</a> 
-            <li class="dropdown">
-              <a href="top.htm" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Credit Cards <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="airline.html">Airline Miles</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="cashback.html">Cashback</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="points.html">Points & Miles</a></li>  
-                </ul>
-                  <li><a href="travelreports.html">Travel Reports</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                </ul>
-      </div><!-- End Container-->
-    </nav><!-- End navbar -->
-<!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="Image/img5.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Points Traveller</h1>
-              <p>Travel was never so cheap.</p>
+<!--header-->
+    <header class="home-header">
+        <div class="bg-color">
+            <!--nav-->
+            <nav class="nav navbar-default">
+                <div class="container bor-btm">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                            <a href="index.html" class="navbar-brand">The Travel Student</a>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="students.html">Students/Beginners</a></li>
+                            <li class="dropdown">
+                            <a href="top.htm" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Credit Cards <span class="caret"></span></a>
+                             <ul class="dropdown-menu">
+                             <li><a href="airline.html">Airline Miles</a></li>
+                             <li role="separator" class="divider"></li>
+                            <li><a href="cashback.html">Cashback</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="points.html">Points & Miles</a></li>  
+                            </ul>
+                            </li>
+                            <li><a href="travelreports.html">Travel Reports</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--/ nav-->
+            <div class="container text-center">
+                <div class="wrapper">
+                    <h2 class="top-title">Welcome To</h2>
+                    <h3 class="title">THE TRAVEL STUDENT</h3>
+                    <h4 class="sub-title">You personal Guide to Free Travel</h4>
+                    <a href="#subscribe"><button type="submit" class="btn btn-submit">Subscribe Now</button></a>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="item">
-          <img class="second-slide" src="Image/img6.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Honeymoon Paradise</h1>
-              <h4>Top 5 Honeymoon Destinations</h4>
-              <p>Take a look at the top five honeymoon destination around the world. You can also find some tips and tricks to travel there at a better price.</p>
-              <p><a class="btn btn-lg btn-primary" href="honeymoon.html" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="Image/img1.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-
+    </header>
+    <!--/ header-->
  
 <!-- Gallery -->
 
   <div class="container">
 
-    <section>
       <div class="page-header" id="gallery">
-          <h2>Recent Posts.<small> Check out the Awesome Gallery</small></h2>
+          <h2>RECENT POSTS.<small> Check out the Awesome Gallery</small></h2>
         </div>
         <div class ="col-sm-8 col-xs-12">
         <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
@@ -126,6 +91,7 @@
                 <p>This is the caption</p>
               </div>
             </div>
+
             <div class="item">
               <img src="Image/img6.jpg" alt="Text of the image">
               <div class="carousel-caption">
@@ -156,8 +122,7 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div><!-- End Carousel -->
-</div>
-    </section>
+      </div>
   
 <!-- Hot Deals-->
 
@@ -192,19 +157,17 @@
         <div class="cards"><img src="Image/hha.png" align="left" alt="Card Type" width="70" /><b>Hilton Honors American Express Card</b><br />
         75,000 Hilton Honors Points</div>
         </a>
-
   </div>
   </div>
 </div>
 </div>  <!-- End Hot Deals-->
 
-
-
 <!-- features -->
-  <div class="container">
+<div id="features">  
+<div class="container" >
     <section>
       <div class="page-header" id="features">
-          <h2>Features.<small> Some of the coolest Features of this website.</small></h2>
+          <h2>FEATURES.<small> Some of the coolest Features of this website.</small></h2>
         </div><!-- End Page Header -->
 
         <div class="row">
@@ -241,85 +204,47 @@
 
     </section>
   </div><!-- End Container -->
+</div>
 
-
-
-
-
-
-
-<!-- Faq -->
-
+<!-- Feedback-->
     <div class="container">
       <section>
-        <div class="page-header" id="faq">
-          <h2>FAQ.<small> Engaging with consumers.</small></h2>
-        </div><!-- End Page Header -->
+        <div class="page-header" id="feedback">
+          <h2>FEEDBACK.<small> Check out the Awesome Feedback</small></h2>
+        </div>
 
-        <div class="panel-group" id="accordion">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <div class="panel-title">
-                  Why did I start this Website?
-                </a>
-              </div><!-- End panel title -->
-                <div class="panel-body">
-                  I have been seeing students doing really bad in regards of credit. I want to help them to have a good credit history. People think it is hard and there is a lot to understand. I have simplified the process in few steps. You can't even imagine how much money you can actually save by it.
-                </div>
-            </div>
+        <div class="row">
+          <div class="col-md-4">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida quam ac ante rutrum, in mollis ligula mattis. Integer nulla nisi, ullamcorper et posuere vel</p>
+              <footer>John doe</footer>
+            </blockquote>
           </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <div class="panel-title">
-                   How do you know this stuff?
-                </a>
-              </div><!-- End panel title -->
-                <div class="panel-body">
-                  I have been reading many different travel blogs for past few years and have learnt a lot. I have tried to collabarate all that knowledge into this website. I feel that no one focuses much on students. As being a student, I want to help my peers.
-                </div>
-            </div>
+          <div class="col-md-4">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida quam ac ante rutrum, in mollis ligula mattis. Integer nulla nisi, ullamcorper et posuere vel</p>
+              <footer>John doe</footer>
+            </blockquote>
           </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <div class="panel-title"> 
-                 Who can be benefited by this website?           
-              </div><!-- End panel title -->
-              
-                <div class="panel-body">
-                  Anyone. Yes frankly anyone. There are so many tips and tricks that can help anyone.
-                </div>
-            </div>
+          <div class="col-md-4">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida quam ac ante rutrum, in mollis ligula mattis. Integer nulla nisi, ullamcorper et posuere vel</p>
+              <footer>John doe</footer>
+            </blockquote>
           </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <div class="panel-title"> 
-                 How can you help us?           
-              </div><!-- End panel title -->
-              
-                <div class="panel-body">
-                  There is no price for any material on this website, you can help us by using the links on this website. You can also help us by sharing your stories that how did this website helped you in any way. You can also share about your Trips or any fun fact or hack you have which can help others.
-                </div>
-            </div>
-          </div>
-
-        </div><!-- End panel group -->
+        </div><!-- End row -->
       </section>
-    </div><!-- End container -->
-
+    </div><!--End Container-->
 
 <!-- call to action -->
-  <section>
-    <div class="well">
+    <div id="subscribe">
       <div class="container text-center">
-        <h3>Subscribe for regular update</h3>
+        <h3>Subscribe for regular updates</h3>
         <p>Enter your name and email</p>
 
         <form action="" class="form-inline">
           <div class="form-group">
-            <label for="subscription">Subscribe</label>
+            <label for="subscription">Name</label>
             <input type="text" class="form-control" id="subscription" placeholder="Your name">
           </div>
           <div class="form-group">
@@ -328,63 +253,58 @@
           </div>
           <button type="submit" class="btn btn-default">Subscribe</button>
         </form>
-
-
       </div><!-- end Container-->
-
     </div><!-- end well-->
-  </section><!-- Call to action -->
 
 
 
+    <!-- Footer -->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>The<span>TravelStudent</span></h3>
 
+        <p class="footer-links">
+          <a href="index.hrml">Home</a>
+          <a href="students.html">Beginners  </a>
+          <a href="top.htm"> Credit Cards  </a>
+          <a href="travelreports.html"> Travel Reports  </a>       
+          <a href="about.html"> About Us</a>
+        </p>
 
-<!-- Footer -->
-<footer>   
-<div class ="navbar-inverse">
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li><a class="navbar-brand" href="index.html">Home</a></li>
-          <li><a href="students.html">Students/Beginners</a></li>
-          <li><a href="top.htm">Credit Cards </a></li>
-          <li><a href="travelreports.html">Travel Reports</a></li>
-          <li><a href="about.html">About Us</a></li>
-          </ul>
-
-          <div class ="copyright">&copy; PointsTraveller.com - All Rights Reserved.</div>
-          <br>
-          <ul class="nav navbar-nav">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">California Privacy Rights</a></li>
-            <li><a href="#">Terms of Use</a></li>
-          </ul>
-
-          <div class ="followus">
-          <a target="_blank" title="follow me on twitter" href="http://www.twitter.com/freetravel"><img alt="follow me on twitter" src="Image/twitter.png" border=0></a>
-          <a target="_blank" title="follow me on twitter" href="http://www.facebook.com/freetravel"><img alt="follow me on twitter" src="Image/facebook.png" border=0></a>
-          </div>
-
+        <p class="footer-company-name">The Travel Student&copy; 2016</p>
       </div>
-  </div>
 
-</footer>
+      <div class="footer-center">
+      <p class="footer-company-about">
+        <span>Follow Us</span>
+          <a href="http://www.facebook.com/thetravelstudent"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.twitter.com/thetravelstudent"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.instagram.com/thetravelstudent"><i class="fa fa-instagram"></i></a>
+          <a href="http://www.pinterest.com/thetravelstudent"><i class="fa fa-pinterest"></i></a>
+        </p><br>
+          <p class="footer-company-about">
+          <span>Our Friends</span>
+     
+        </p>
+      </div>
+      </div>
 
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Disclaimer</span>
+          The opinions expressed here are author's alone, not those of any bank, credit card issuer, airlines or hotel chain, and have not been reviewed, approved or otherwise endorsed by any of these entities.
+        </p>
+      </div>
+
+    </footer>
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-
-<!-- Placed at the end of the document so the pages load faster -->
-    <script src="jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="JS/jquery.min.js"><\/script>')</script>
 
 </body>
 </html>
