@@ -105,7 +105,9 @@
   line-height: 1;
   letter-spacing: -1px;
 }
-
+.featurette-image{
+  max-height: 200;
+}
 .dropdown{
     position: relative;
 }
