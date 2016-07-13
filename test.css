@@ -111,6 +111,9 @@
 .dropdown{
     position: relative;
 }
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
 
 .caret.caret-up {
     border-top-width: 0;

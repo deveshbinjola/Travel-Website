@@ -105,9 +105,14 @@
   line-height: 1;
   letter-spacing: -1px;
 }
-
+.featurette-image{
+  max-height: 200;
+}
 .dropdown{
     position: relative;
+}
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
 }
 
 .caret.caret-up {
