@@ -301,7 +301,11 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 
 }
 
-.tips{
-  height: 100px;
+.holder {   
+  display: inline-block;    
 }
 
+.holder img {
+  width: 450px; /* Will shrink image to 30% of its original width */
+  height: 250px;    
+}​
