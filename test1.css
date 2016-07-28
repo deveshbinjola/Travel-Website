@@ -306,6 +306,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 }
 
 .holder img {
-  width: 450px; /* Will shrink image to 30% of its original width */
-  height: 250px;    
+  width: 350px; /* Will shrink image to 30% of its original width */
+  height: 190px; 
+  padding: 5px 5px 5px 5px;   
 }​
