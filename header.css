@@ -31,30 +31,33 @@
 {
 	background: url(Image/img11.jpg) no-repeat;
 	background-size: cover;
-	max-height: 650px;
+	max-height: 450px;
 }
 .cashback-header
 {
-	background: url(Image/img1.jpg) no-repeat;
+	background: url(Image/img4.jpg) no-repeat;
 	background-size: cover;
-	max-height: 650px;
+	max-height: 400px;
 }
 .points-header
 {
-	background: url(Image/img2.jpg);
+	background: url(Image/img2.jpg) no-repeat;
 	background-size: cover;
-	max-height: 650px;
+	max-height: 480px;
 }
 .cards-header
 {
 	background: url(Image/cards.jpg) no-repeat;
 	background-size: cover;
-	max-height: 650px;
+	max-height: 550px;
 }
-.bg-color
+.hotel-header
 {
-	background-color: RGBA(0, 0, 0, 0.41);
+	background: url(Image/img2.jpg) no-repeat;
+	background-size: cover;
+	max-height: 480px;
 }
+
 .bor-btm
 {
     top: 0;
@@ -157,3 +160,26 @@
     transition: all 0.4s ease-in-out;
     margin-top: 25px;
 }
+.navbar-default1{
+padding-left: 240px;
+}
+
+.navbar-default1 .navbar-nav > li > a {
+    padding: 0px 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.navbar-default1 .navbar-nav > li > a:hover
+{
+	color: #000;
+}
+
+
+.bor-btm1
+{
+    padding-top: 20px;
+}
+.navbar-default1 .fa{
+	padding-left: 45px;
+}
+
