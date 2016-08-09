@@ -6,26 +6,26 @@
 {
 	background: url(Image/img5.jpg) no-repeat;
 	background-size: cover;
-	max-height: 650px;
+	max-height: 600px;
 }
 .student-header
 {
 	background: url(Image/img3.jpg) no-repeat;
 	background-size: cover;
-	max-height: 650px;
+	max-height: 550px;
 }
 
 .reports-header
 {
 	background: url(Image/img6.jpg) no-repeat;
 	background-size: cover;
-	max-height: 650px;
+	max-height: 470px;
 }
 .about-header
 {
 	background: url(Image/img13.jpg) no-repeat;
 	background-size: cover;
-	max-height: 650px;
+	max-height: 500px;
 }
 .airline-header
 {
@@ -56,6 +56,12 @@
 	background: url(Image/img2.jpg) no-repeat;
 	background-size: cover;
 	max-height: 480px;
+}
+
+.other-header
+{
+	background: url(Image/img2.jpg) no-repeat;
+	max-height: 82px;
 }
 
 .bor-btm

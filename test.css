@@ -17,7 +17,7 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     font-size: 200%;
-    background: #FFA500;
+    background: #6E6E6E;
     border-radius: 1px;
     text-align: center;
     color: white;
@@ -328,4 +328,18 @@ text-decoration: none;
 
 .creditcard h3{
   padding-bottom: 5px
+}
+
+.creditcard img{
+  height: 150px;
+  width: 240px;
+}
+
+.favorite a:link, .favorite a:visited, .favorite a:active { 
+color:#fff; 
+text-decoration: none;
+}
+
+.favorite a:hover{
+  color: lightblue;
 }
