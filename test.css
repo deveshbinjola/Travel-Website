@@ -4,7 +4,14 @@
     padding-left: 5px;
     padding-bottom: 0px;
 }
-
+.panel .lower{
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 1px;
+}
 
 .myPanel{
     -webkit-border-radius: 5px;
