@@ -6,7 +6,7 @@ include "cn.php";
 	$fullname = $_POST['fullname'];
 	$email = $_POST['email'];
 
-	$q = "INSERT INTO Email Signup(Name, Email) VALUES ('$fullname', '$email')";
+	$q = "INSERT INTO Signup(Name, Email) VALUES ('$fullname', '$email')";
 
 	$r = mysql_query($q);
 
