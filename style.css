@@ -258,6 +258,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	background-attachment: fixed;
 }
 
+h1 {
+	font-size: 35px; /* PL change; was 48px */
+	margin: 33px 0;
+}
+h2 {
+	font-size: 20px; /* PL change; was 30px */
+	margin: 15px 0;
+}
+
+.resume h5, h6 {
+	font-weight: normal;
+	color: #222222;
+}
+.resume h5 {
+	font-size: 16px;
+	line-height: 20px;
+	text-align: right;
+}
+.resume h6 {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: right;
+}
+.resume img {
+	margin: 0;
+	/* margin: 5px 20px 5px 0; */
+	display: inline;
+	float: left;
+	vertical-align: middle;
+}
+.resume p.clear {
+	clear: both;
+}
+
+
 
 
 
