@@ -7,6 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <title>Earning Points</title>
 
@@ -18,6 +19,24 @@
   </head>
 
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '656115341234604',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "http://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <nav class="navbar navbar-default navbar-inverse">
 <div class="container">
   <div class="container-fluid">
@@ -60,7 +79,12 @@
 <!-- Sharing Buttons -->
             <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-            <iframe src="https://www.facebook.com/plugins/share_button.php?href=http://www.facebook.com/share.php?u=http://thetravelstudent.com/post6&layout=button_count&mobile_iframe=true&width=88&height=20&appId" width="88" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 <!-- Sharing buttons END -->
 
             <ol>
