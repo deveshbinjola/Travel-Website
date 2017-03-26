@@ -1,0 +1,3 @@
+.home .overlay .gradient{background-image:-webkit-linear-gradient(bottom,#cc434e 25%,hsla(0,0%,100%,0));background-image:linear-gradient(0deg,#cc434e 25%,hsla(0,0%,100%,0));-webkit-box-flex:2;-webkit-flex-grow:2;-ms-flex-positive:2;flex-grow:2;height:100%;max-width:133rem;width:100%}
+
+@media (min-width:1020px){.home .overlay .gradient{background-image:-webkit-linear-gradient(right,#cc434e 10%,hsla(0,0%,100%,0));background-image:linear-gradient(270deg,#cc434e 10%,hsla(0,0%,100%,0))}}

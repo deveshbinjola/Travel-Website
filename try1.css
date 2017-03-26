@@ -1,0 +1,35 @@
+<link rel='stylesheet' id='social-logos-css'  href='http://thepointsguy.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=1' type='text/css' media='all' />
+
+
+
+<div class="social-icons">
+      <a href="https://facebook.com/thepointsguy/" class="facebook-icon" title="Like us on Facebook">
+      <span class="icon icon-facebook circle">
+  <svg version="1.1" viewBox="0 0 2048 2048" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path transform="scale(1, -1) translate(0, -2048)" d="M2048 1011q0 -221 -100 -429t-274 -350q-174 -143 -394 -200v779h219l37 256h-256v225q0 116 112 116h163v238q-76 17 -184 17q-180 1 -275 -91t-95 -249v-256h-233v-256h233v-811q-205 4 -390 87t-319 219t-213 324t-79 395t81 397t219 326q138 138 326 219
+q190 81 398 81t398 -81t326 -219q138 -138 219 -326q81 -190 81 -411z" />
+  </svg>
+</span>     <span class="social_text">Facebook</span>
+    </a>
+  
+      <a href="https://www.instagram.com/thepointsguy/" class="instagram-icon" title="Follow us on Instagram">
+      <span class="icon icon-instagram circle">
+  <svg version="1.1" viewBox="0 0 2048 2048" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path transform="scale(1, -1) translate(0, -2048)" d="M1621 597v854q1 71 -49 121t-121 49h-854q-71 1 -121 -49t-49 -121v-854q-1 -71 49 -121t121 -49h854q71 -1 121 49t49 121zM1024 2048q208 0 398 -81t326 -219q138 -138 219 -326q81 -190 81 -398t-81 -398t-219 -326q-138 -138 -326 -219q-190 -81 -398 -81t-398 81
+t-326 219q-138 138 -219 326q-81 190 -81 398t81 398t219 326q138 138 326 219q190 81 398 81zM1493 1109v-512q-1 -17 -13 -29t-29 -13h-854q-17 1 -29 13t-13 29v512h138q-10 -39 -10 -85q-1 -141 99 -241t242 -100t242 100t99 241q0 46 -10 85h138zM1493 1451v-128
+q-1 -19 -13 -31t-29 -12h-128q-19 0 -31 12t-12 31v128q0 17 12 29t31 13h128q17 -1 29 -13t13 -29zM811 1024q1 88 63 150t150 63q88 -1 150 -63t63 -150q-1 -88 -63 -150t-150 -63q-88 1 -150 63t-63 150z" />
+  </svg>
+</span>     <span class="social_text">Instagram</span>
+    </a>
+  
+  
+      <a href="https://twitter.com/thepointsguy/" class="twitter-icon" title="Follow us on Twitter">
+      <span class="icon icon-twitter circle">
+  <svg version="1.1" viewBox="0 0 2048 2048" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path transform="scale(1, -1) translate(0, -2048)" d="M1358 1536q-124 0 -207 -85q-84 -85 -84 -207q0 -37 7 -66q-180 9 -336 90t-266 216q-38 -70 -38 -146t34 -140t94 -103q-69 0 -131 36v-3q0 -105 66 -185t167 -102q-31 -9 -67 -9t-64 5q27 -87 101 -141t170 -56q-171 -133 -361 -133q-15 0 -68 5q197 -128 445 -128
+q155 0 291 49q248 89 392 311t144 467v38q78 55 145 150q-81 -34 -168 -46q92 54 125 162q-84 -50 -182 -71q-85 92 -209 92zM1024 2048q208 0 398 -81t327 -218t218 -327t81 -398t-81 -398t-218 -327t-327 -218t-398 -81t-398 81t-327 218t-218 327t-81 398t81 398t218 327
+t327 218t398 81z" />
+  </svg>
+</span>     <span class="social_text">Twitter</span>
+    </a>
+  </div>
