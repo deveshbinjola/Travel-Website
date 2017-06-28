@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1039.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="shortcut icon" href="https://thepointsguy.com/wp-content/themes/tpg-2016/favicon.ico?v=3" />
+<meta name="google-site-verification" content="Ljof3Duwtracp116XX76hDeY-IZn3TnvmYX8PMQIFIw" />
+
+<title>Cards &#8211; The Points Guy</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="header2.css">
+    <link rel="stylesheet" type="text/css" href="test1.css">
+    <link rel="stylesheet" type="text/css" href="new.css">
+    <link href="blog.css" rel="stylesheet">
+<link rel='dns-prefetch' href='//thepointsguy.com' />
+<link rel='dns-prefetch' href='//assets.adobedtm.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Points Guy &raquo; Feed" href="https://thepointsguy.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Points Guy &raquo; Comments Feed" href="https://thepointsguy.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Points Guy &raquo; Cards Feed" href="https://thepointsguy.com/card-details/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thepointsguy.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='tpg_2016-screen-css'  href='https://thepointsguy.com/wp-content/themes/tpg-2016/static/css/global.e4516ce7cd8cedfb92f1.min.css?ver=1.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='social-logos-css'  href='https://thepointsguy.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://thepointsguy.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.4.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://thepointsguy.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_object = {"ajax_url":"https:\/\/thepointsguy.com\/wp-admin\/admin-ajax.php","base_url":"https:\/\/thepointsguy.com","endpoint_url":"https:\/\/thepointsguy.com\/endpoint","guid":"https:\/\/thepointsguy.com\/?post_type=card&p=345662","post_id":"345662","eventName":"visit","cardID":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/common.4a1cd35.bundle.min.js?ver=1.1.1'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/webfontLoader.4a1cd35.bundle.min.js?ver=1.1.1'></script>
+<script type='text/javascript' src='https://assets.adobedtm.com/35c935cd798f6a0634b954c60f0f14c3bb4b481c/satelliteLib-7f82f7455f569d0b577e1e3bab4203c604ae47f7.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='https://thepointsguy.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thepointsguy.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thepointsguy.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.5" />
+<!-- BEGIN wp-parsely Plugin Version 1.10.2 -->
+<meta name='wp-parsely_version' id='wp-parsely_version' content='1.10.2' />
+    <!-- parsleyPage is not defined / has no attributes.  What kind of page are you loading? -->
+<!-- END wp-parsely Plugin Version 1.10.2 -->
+
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<meta property="og:title" content="  Cards"/><meta property="og:url" content="https://thepointsguy.com/cards/"/><meta property="og:site_name" content="The Points Guy"/><meta property="twitter:card" content="summary_large_image"/><meta property="twitter:title" content="  Cards"/><meta property="twitter:site" content="@thepointsguy"/>	<script type="text/javascript">
+		window.tpgGlobalVars = {"permalink":"http:\/\/thepointsguy.com\/card-details\/navy-federal-credit-union-go-rewards\/","dsqIdentifierForPost":"http:\/\/thepointsguy.com\/card-details\/navy-federal-credit-union-go-rewards\/"};
+	</script>
+	<style>img[data-sizes="auto"] { display: block; width: 100%; }</style></head>
+
+<body class="archive post-type-archive post-type-archive-card hfeed">
+
+<div class="above-footer">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	
+<nav class="nav navbar-inverse">
+                <div class="container bor-btm">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                            <a href="http://thetravelstudent.com" class="navbar-brand">The Travel Student</a>
+
+                        </div>
+
+                        <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+                         
+                <ul class="nav navbar-nav social">
+                    <li><a href="https://www.facebook.com/thetravelstudent" title="Like us on Facebook" aria-label="Like us on Facebook" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com/deveshbinjola" title="Subscribe to our YouTube channel" aria-label="Follow us on twitter." target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/deveshbinjola/" title="Follow us on Instagram" aria-label="Follow us on Instagram" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
+                </ul>
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="http://thetravelstudent.com/students">Students</a></li>
+                            <li class="dropdown"><a href="http://thetravelstudent.com/top">Credit cards <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                               <li><a href="http://thetravelstudent.com/airline">Airline Miles</a></li>
+                             <li role="separator" class="divider"></li>
+                            <li><a href="http://thetravelstudent.com/cashback">Cashback</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://thetravelstudent.com/hotel">Hotel Points</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://thetravelstudent.com/points">Other Points</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="http://thetravelstudent.com/travelreports">Travel Reports</a></li>
+                            <li><a href="http://thetravelstudent.com/deals">Deals</a></li>
+                            <li><a href="http://thetravelstudent.com/about">About</a></li>
+                        </ul>
+
+                        </div>
+    
+                    </div>
+                </div>
+            </nav>
+		
+		
+
+
+
+<div id="search" class="search-modal"></div>
+
+<div id="notification-waypoint"></div>
+
+<div class="content content-all-cards">
+
+	
+<section class="favorite-cards favorite-cards-grid">
+	<div class="favorite-cards-wrapper">
+
+					<div class="section-header">Our Favorite Cards From Our Partners</div>
+		
+		<div class="cards-wrapper">
+			
+<div class="card">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/chase-sapphire-reserve%e2%84%a0/?tid=FAV-CARD-ALL-CARDS-1">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/05/chase-sapphire-reserve-081516.png?resize=500%2C312px&#038;ssl=1 500w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/05/chase-sapphire-reserve-081516.png?resize=409%2C255px&#038;ssl=1 409w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/05/chase-sapphire-reserve-081516.png?resize=254%2C154px&#038;ssl=1 254w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/05/chase-sapphire-reserve-081516.png?resize=150%2C94px&#038;ssl=1 150w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/05/chase-sapphire-reserve-081516.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/05/chase-sapphire-reserve-081516.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/chase-sapphire-reserve%e2%84%a0/?tid=FAV-CARD-ALL-CARDS-1">
+				Chase Sapphire Reserve℠			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/chase-sapphire-reserve%e2%84%a0/?tid=FAV-CARD-ALL-CARDS-1">50,000 bonus points</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/chase-sapphire-reserve%e2%84%a0/?tid=FAV-CARD-ALL-CARDS-1">Terms</a>
+		</div>
+
+					<div class="annual-fee">
+				Annual Fee			</div>
+
+			<div class="annual-fee-value">
+				$450			</div>
+		
+					<div class="editorial-blurb">
+				<p>This is one of the top premium cards out there since you earn 3x on all travel and dining and have access to great perks like a $300 travel credit each year, 50% more value when you redeem points for travel through Chase Ultimate Rewards and you get elite travel benefits like Global Entry application fee rebate, Priority Pass Select and special rental car privileges.</p>
+							</div>
+		
+			</div>
+</div>
+
+<div class="card">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/ink-business-preferred%e2%84%a0-credit-card/?tid=FAV-CARD-ALL-CARDS-2">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=500%2C312px&#038;ssl=1 500w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=409%2C255px&#038;ssl=1 409w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=254%2C154px&#038;ssl=1 254w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=150%2C94px&#038;ssl=1 150w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/ink-business-preferred%e2%84%a0-credit-card/?tid=FAV-CARD-ALL-CARDS-2">
+				Ink Business Preferred℠ Credit Card			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/ink-business-preferred%e2%84%a0-credit-card/?tid=FAV-CARD-ALL-CARDS-2">80,000 points</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/ink-business-preferred%e2%84%a0-credit-card/?tid=FAV-CARD-ALL-CARDS-2">Terms</a>
+		</div>
+
+					<div class="annual-fee">
+				Annual Fee			</div>
+
+			<div class="annual-fee-value">
+				$95			</div>
+		
+					<div class="editorial-blurb">
+				<p>The 80,000 signup bonus of Chase’s valuable Ultimate Rewards points is one of the best offers out there, and this card gets 3 points per dollar on the first $150,000 spent on travel, shipping, social media advertising and internet / cable / phone services, making it one of the best cards out there for Business Owners.</p>
+							</div>
+		
+			</div>
+</div>
+
+<div class="card">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/the-platinum-card-from-american-express/?tid=FAV-CARD-ALL-CARDS-3">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/06/AmexPlatinumCardart-6.2.17.png?resize=500%2C312px&#038;ssl=1 500w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/06/AmexPlatinumCardart-6.2.17.png?resize=409%2C255px&#038;ssl=1 409w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/06/AmexPlatinumCardart-6.2.17.png?resize=254%2C154px&#038;ssl=1 254w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/06/AmexPlatinumCardart-6.2.17.png?resize=150%2C94px&#038;ssl=1 150w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/06/AmexPlatinumCardart-6.2.17.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/06/AmexPlatinumCardart-6.2.17.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/the-platinum-card-from-american-express/?tid=FAV-CARD-ALL-CARDS-3">
+				The Platinum Card® from American Express			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/the-platinum-card-from-american-express/?tid=FAV-CARD-ALL-CARDS-3">60,000 points</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/the-platinum-card-from-american-express/?tid=FAV-CARD-ALL-CARDS-3">Terms</a>
+		</div>
+
+					<div class="annual-fee">
+				Annual Fee			</div>
+
+			<div class="annual-fee-value">
+				$550			</div>
+		
+					<div class="editorial-blurb">
+				<p>This card has an increased welcome offer of 60,000 points. The Platinum card also has extremely lucrative perks that make it worthwhile like 5x on airfare, a $200 annual airline rebate, Delta SkyClub and Centurion Lounge Network access and Global Entry fee rebate.</p>
+							</div>
+		
+			<div class="is-amex">
+		<span>Terms and restrictions apply.</span>
+		<a href="https://www.americanexpress.com/us/credit-cards/personal-card-application/terms/platinum-charge-card/26129-10-0/?print#terms-details" target="_blank">See rates &amp; fees.</a>
+	</div>
+		</div>
+</div>
+
+<div class="card">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/the-enhanced-business-platinum-card-from-american-express-open/?tid=FAV-CARD-ALL-CARDS-4">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-platinum-card-from-american-express-open-033017.png?resize=500%2C312px&#038;ssl=1 500w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-platinum-card-from-american-express-open-033017.png?resize=409%2C255px&#038;ssl=1 409w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-platinum-card-from-american-express-open-033017.png?resize=254%2C154px&#038;ssl=1 254w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-platinum-card-from-american-express-open-033017.png?resize=150%2C94px&#038;ssl=1 150w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-platinum-card-from-american-express-open-033017.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-platinum-card-from-american-express-open-033017.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/the-enhanced-business-platinum-card-from-american-express-open/?tid=FAV-CARD-ALL-CARDS-4">
+				The Business Platinum® Card from American Express OPEN			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/the-enhanced-business-platinum-card-from-american-express-open/?tid=FAV-CARD-ALL-CARDS-4">Up to 75,000 points</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/the-enhanced-business-platinum-card-from-american-express-open/?tid=FAV-CARD-ALL-CARDS-4">Terms</a>
+		</div>
+
+					<div class="annual-fee">
+				Annual Fee			</div>
+
+			<div class="annual-fee-value">
+				$450			</div>
+		
+					<div class="editorial-blurb">
+				<p>An impressive 75,000 signup bonus, access to Lounges around the world, and a 35% points rebate makes this one of the top business charge cards out there.</p>
+							</div>
+		
+			<div class="is-amex">
+		<span>Terms and restrictions apply.</span>
+		<a href="https://www262.americanexpress.com/business-card-application/business-platinum-charge-card/tandc/42732-AJTnC-0/?key=tncBody" target="_blank">See rates &amp; fees.</a>
+	</div>
+		</div>
+</div>
+
+<div class="card">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/chase-sapphire-preferred-card/?tid=FAV-CARD-ALL-CARDS-5">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=500%2C312px&#038;ssl=1 500w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=409%2C255px&#038;ssl=1 409w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=254%2C154px&#038;ssl=1 254w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=150%2C94px&#038;ssl=1 150w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/chase-sapphire-preferred-card/?tid=FAV-CARD-ALL-CARDS-5">
+				Chase Sapphire Preferred® Card			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/chase-sapphire-preferred-card/?tid=FAV-CARD-ALL-CARDS-5">50,000 points</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/chase-sapphire-preferred-card/?tid=FAV-CARD-ALL-CARDS-5">Terms</a>
+		</div>
+
+					<div class="annual-fee">
+				Annual Fee			</div>
+
+			<div class="annual-fee-value">
+				Introductory Annual Fee of $0 the first year, then $95			</div>
+		
+					<div class="editorial-blurb">
+				<p>Great travel benefits, 2x points on travel &amp; dining, a 50,000 point sign up bonus, and no annual fee first year make this one of our favorite cards.</p>
+							</div>
+		
+			</div>
+</div>
+
+<div class="card">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/citi-aadvantage-platinum-select-world-elite-mastercard/?tid=FAV-CARD-ALL-CARDS-6">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/03/citi-aadvantage-platinum-053116.png?resize=500%2C312px&#038;ssl=1 500w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/03/citi-aadvantage-platinum-053116.png?resize=409%2C255px&#038;ssl=1 409w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/03/citi-aadvantage-platinum-053116.png?resize=254%2C154px&#038;ssl=1 254w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/03/citi-aadvantage-platinum-053116.png?resize=150%2C94px&#038;ssl=1 150w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/03/citi-aadvantage-platinum-053116.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/03/citi-aadvantage-platinum-053116.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/citi-aadvantage-platinum-select-world-elite-mastercard/?tid=FAV-CARD-ALL-CARDS-6">
+				Citi® /  AAdvantage® Platinum Select® World Elite™ Mastercard®			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/citi-aadvantage-platinum-select-world-elite-mastercard/?tid=FAV-CARD-ALL-CARDS-6">60,000 miles</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/citi-aadvantage-platinum-select-world-elite-mastercard/?tid=FAV-CARD-ALL-CARDS-6">Terms</a>
+		</div>
+
+					<div class="annual-fee">
+				Annual Fee			</div>
+
+			<div class="annual-fee-value">
+				$95, waived for first 12 months*			</div>
+		
+					<div class="editorial-blurb">
+				<p>For a limited time you can earn 60,000 miles with this card - a significant increase from the standard 30,000 mile offer. If you're a frequent American flyer but don't have status, additional perks that come with this card like first free checked bag on domestic AA itineraries, preferred boarding on American flights and 10% of your redeemed AA miles back (up to 10,000 miles each year) can be extremely valuable.</p>
+							</div>
+		
+			</div>
+</div>
+
+<div class="card">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/the-business-gold-rewards-card-from-american-express-open/?tid=FAV-CARD-ALL-CARDS-7">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-gold-rewards-card-from-american-express-open-013015.png?resize=500%2C312px&#038;ssl=1 500w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-gold-rewards-card-from-american-express-open-013015.png?resize=409%2C255px&#038;ssl=1 409w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-gold-rewards-card-from-american-express-open-013015.png?resize=254%2C154px&#038;ssl=1 254w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-gold-rewards-card-from-american-express-open-013015.png?resize=150%2C94px&#038;ssl=1 150w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-gold-rewards-card-from-american-express-open-013015.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/the-enhanced-business-gold-rewards-card-from-american-express-open-013015.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/the-business-gold-rewards-card-from-american-express-open/?tid=FAV-CARD-ALL-CARDS-7">
+				The Business Gold Rewards Card from American Express OPEN			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/the-business-gold-rewards-card-from-american-express-open/?tid=FAV-CARD-ALL-CARDS-7">50,000 points</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/the-business-gold-rewards-card-from-american-express-open/?tid=FAV-CARD-ALL-CARDS-7">Terms</a>
+		</div>
+
+					<div class="annual-fee">
+				Annual Fee			</div>
+
+			<div class="annual-fee-value">
+				$0 introductory annual fee for the first year, then $175			</div>
+		
+					<div class="editorial-blurb">
+				<p>Though the Business Gold Rewards card doesn’t have the benefits package of the more premium Business Platinum Card, it also doesn’t have that card’s $450 annual fee. In fact, the $175 annual fee on this one is waived the first year, so getting it is like a risk-free trial of its benefits plus it comes with appealing bonus spending categories like 3x on the category of choice and a range of 2x spending categories as well.</p>
+							</div>
+		
+			<div class="is-amex">
+		<span>Terms and restrictions apply.</span>
+		<a href="https://www262.americanexpress.com/business-card-application/business-gold-charge-card/tandc/42732-AJTnC-0/?pznOfferCode=&#038;rsvpFlag=&#038;rc=&#038;zc=&#038;ch=&#038;key=tncBody" target="_blank">See rates &amp; fees.</a>
+	</div>
+		</div>
+</div>
+
+<div class="card">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/the-hyatt-credit-card/?tid=FAV-CARD-ALL-CARDS-8">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-hyatt-credit-card-041717.png?resize=500%2C312px&#038;ssl=1 500w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-hyatt-credit-card-041717.png?resize=409%2C255px&#038;ssl=1 409w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-hyatt-credit-card-041717.png?resize=254%2C154px&#038;ssl=1 254w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-hyatt-credit-card-041717.png?resize=150%2C94px&#038;ssl=1 150w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-hyatt-credit-card-041717.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-hyatt-credit-card-041717.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/the-hyatt-credit-card/?tid=FAV-CARD-ALL-CARDS-8">
+				The Hyatt Credit Card			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/the-hyatt-credit-card/?tid=FAV-CARD-ALL-CARDS-8">2 free nights</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/the-hyatt-credit-card/?tid=FAV-CARD-ALL-CARDS-8">Terms</a>
+		</div>
+
+					<div class="annual-fee">
+				Annual Fee			</div>
+
+			<div class="annual-fee-value">
+				$75			</div>
+		
+					<div class="editorial-blurb">
+				<p>This is a card that TPG recommends to keep open year after year because of the free night you earn each year after your cardmember anniversary. Even though there is a $75 annual fee, the value of a free night at a category 1-4 property can be worth hundreds of dollars. You'll also receive Discoverist status as long as you are a cardholder, which will get you complimentary premium internet plus a free night once you stay at 5 different Hyatt brands.</p>
+							</div>
+		
+			</div>
+</div>
+		</div>
+
+			</div>
+</section>
+		<div class="content">
+			<section class="page-content">
+				<div class="page-wrapper">
+					<h2 style="text-align: center"><strong>For more Hot Deals, check out our <a href="/2017/06/top-card-offers-june-2017/">Top 10 Travel Rewards Cards</a> for June.</strong></h2>
+				</div>
+			</section>
+		</div>
+	
+<div id="card-search"></div>
+
+<section class="related-links">
+
+	<div class="related-header">
+		<span>More from the Points Guy</span>
+	</div>
+
+			<div class="related-link">
+			<a href="https://thepointsguy.com/2017/06/van-lifers-to-follow-on-instagram/">		<div class="attachment-image size-16x9">
+			<figure>
+				<img width="768" height="432" class="attachment-16x9 size-16x9 lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/12/GettyImages-108476520.jpg?crop=0px%2C459px%2C5221px%2C2937px&#038;w=1280&#038;ssl=1 1280w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/12/GettyImages-108476520.jpg?crop=0px%2C459px%2C5221px%2C2937px&#038;w=468&#038;ssl=1 468w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/12/GettyImages-108476520.jpg?crop=0px%2C459px%2C5221px%2C2937px&#038;w=307&#038;ssl=1 307w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/12/GettyImages-108476520.jpg?crop=0px%2C459px%2C5221px%2C2937px&#038;w=144&#038;ssl=1 144w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/12/GettyImages-108476520.jpg?crop=0px%2C459px%2C5221px%2C2937px&#038;w=144&#038;ssl=1" />			</figure>
+		</div>
+		</a>
+			<div class="meta">
+									<div class="label"><a href="https://thepointsguy.com/category/news/" title="News" >News</a></div>
+								<div class="title"><a href="https://thepointsguy.com/2017/06/van-lifers-to-follow-on-instagram/" title="11 #VanLifers You Should Be Following on Instagram" >11 #VanLifers You Should Be Following on Instagram</a></div>
+				<div class="timestamp">7 hours ago</div>
+			</div>
+		</div>
+			<div class="related-link">
+			<a href="https://thepointsguy.com/2017/06/deal-alert-singapore-1086/">		<div class="attachment-image size-16x9">
+			<figure>
+				<img width="768" height="432" class="attachment-16x9 size-16x9 lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/06/GettyImages-586316294.jpg?crop=876px%2C0px%2C1910px%2C1075px&#038;w=1280&#038;ssl=1 1280w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/06/GettyImages-586316294.jpg?crop=876px%2C0px%2C1910px%2C1075px&#038;w=468&#038;ssl=1 468w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/06/GettyImages-586316294.jpg?crop=876px%2C0px%2C1910px%2C1075px&#038;w=307&#038;ssl=1 307w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/06/GettyImages-586316294.jpg?crop=876px%2C0px%2C1910px%2C1075px&#038;w=144&#038;ssl=1 144w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/06/GettyImages-586316294.jpg?crop=876px%2C0px%2C1910px%2C1075px&#038;w=144&#038;ssl=1" />			</figure>
+		</div>
+		</a>
+			<div class="meta">
+									<div class="label"><a href="https://thepointsguy.com/category/deals/" title="Deals" >Deals</a></div>
+								<div class="title"><a href="https://thepointsguy.com/2017/06/deal-alert-singapore-1086/" title="Deal Alert: Premium Economy to Singapore From $1,086 Round-Trip" >Deal Alert: Premium Economy to Singapore From $1,086 Round-Trip</a></div>
+				<div class="timestamp">9 hours ago</div>
+			</div>
+		</div>
+			<div class="related-link">
+			<a href="https://thepointsguy.com/2017/06/points-and-miles-guide-nice-france/">		<div class="attachment-image size-16x9">
+			<figure>
+				<img width="768" height="432" class="attachment-16x9 size-16x9 lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/N24.jpg?crop=206px%2C0px%2C624px%2C351px&#038;w=1280&#038;ssl=1 1280w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/N24.jpg?crop=206px%2C0px%2C624px%2C351px&#038;w=468&#038;ssl=1 468w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/N24.jpg?crop=206px%2C0px%2C624px%2C351px&#038;w=307&#038;ssl=1 307w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/N24.jpg?crop=206px%2C0px%2C624px%2C351px&#038;w=144&#038;ssl=1 144w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/N24.jpg?crop=206px%2C0px%2C624px%2C351px&#038;w=144&#038;ssl=1" />			</figure>
+		</div>
+		</a>
+			<div class="meta">
+									<div class="label"><a href="https://thepointsguy.com/category/news/" title="News" >News</a></div>
+								<div class="title"><a href="https://thepointsguy.com/2017/06/points-and-miles-guide-nice-france/" title="Your Points and Miles Guide to Nice, France" >Your Points and Miles Guide to Nice, France</a></div>
+				<div class="timestamp">11 hours ago</div>
+			</div>
+		</div>
+	
+</section>
+
+</div>
+</div>
+
+
+<section class="advertiser-disclosure-body">
+	<div class="advertiser-disclosure-heading"><h3>Advertiser Disclosure</h3></div>
+	<span class="icon icon-x-close">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42.4 42.4" style="enable-background:new 0 0 42.4 42.4;" xml:space="preserve">
+		<rect x="-6.8" y="19.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.7868 21.2132)" width="56" height="4"/>
+		<rect x="-6.8" y="19.2" transform="matrix(0.7071 0.7071 -0.7071 0.7071 21.2132 -8.7868)" width="56" height="4"/>
+	</svg>
+</span>	<p>The credit card offers that appear on the website are from credit card companies from which ThePointsGuy.com receives compensation. This compensation may impact how and where products appear on this site (including, for example, the order in which they appear). This site does not include all credit card companies or all available credit card offers. Please view our <a href="/advertising-policy/">advertising policy page</a> for more information.</p>
+<p>Editorial Note: Opinions expressed here are author&#8217;s alone, not those of any bank, credit card issuer, airlines or hotel chain, and have not been reviewed, approved or otherwise endorsed by any of these entities.</p>
+</section>
+<footer class="footer-nav">
+	<section class="footer-nav-wrapper">
+		<div class="column-main">
+			<div class="footer-logo">
+				<span class="tpg-logo tpg-logo-secondary">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1158.45 467.85">
+	  <path class="cls-1" d="M263.43,97.84a6.58,6.58,0,0,1,6.58,6.58V447.61a14.28,14.28,0,0,0,14.22,14.23h63.66A13.15,13.15,0,0,0,361,448.73V285.84a6,6,0,0,1,6-6h58.75a135.19,135.19,0,0,0,67.91-18.6.1.1,0,0,1,.15.09c.66,22.4,2.14,44,4.45,63.42,9.07,77.75,64,143.11,153.37,143.11,88.77,0,153.37-64.21,153.37-142V216.23a11.39,11.39,0,0,0-11.39-11.39H667.47A14.51,14.51,0,0,0,653,219.31V278.5a14.38,14.38,0,0,0,14.34,14.34h44a5.68,5.68,0,0,1,5.68,5.68v27.39c0,29.16-26.11,50.54-65,50.54-39.52,0-59.38-23.33-62.62-51.83-6.48-54.43-6.37-127,.11-181.42,3.24-28.51,22.4-51.83,61.92-51.83,40.82,0,62.57,29.8,62.57,56.37v.55a13.61,13.61,0,0,0,13.57,13.55h66.14c7.13,0,11.29-7,11.29-13.46v-.65C805,61.56,741,0,651.63,0c-53.06,0-93.83,23.4-120.45,58.38a.1.1,0,0,1-.14,0l0,0A135,135,0,0,0,425.74,7.84H13.51A13.55,13.55,0,0,0,0,21.35V84.77A13.1,13.1,0,0,0,13.06,97.84H93.42a6.58,6.58,0,0,1,6.58,6.58V447.61a14.28,14.28,0,0,0,14.23,14.23h64.29A12.48,12.48,0,0,0,191,449.36V104.42a6.58,6.58,0,0,1,6.58-6.58Zm162.32,91H367.54A6.54,6.54,0,0,1,361,182.3h0V104.42a6.58,6.58,0,0,1,6.58-6.58h57.07c26.78,0,48.17,21.92,46.34,48.64a45.63,45.63,0,0,1-45.25,42.36Z" transform="translate(0 -0.01)"/>
+	  <path class="cls-2" d="M996.3,142.95A162.15,162.15,0,1,0,1158.45,305.1,162.15,162.15,0,0,0,996.3,142.95ZM1079.06,354a6.26,6.26,0,0,1-1.83,4.42l-30,30a6.26,6.26,0,0,1-10.68-4.42v-74.4c0-3.89-4.25-5.9-7.48-2.67L943.8,392.19a6.26,6.26,0,0,1-8.85,0l-22.86-22.86a6.26,6.26,0,0,1,0-8.85L997,275.54c3.45-3.45,1.08-7.48-2.67-7.48H920.54a6.26,6.26,0,0,1-4.42-10.69l30.08-30a6.25,6.25,0,0,1,4.42-1.82h122.19a6.26,6.26,0,0,1,6.26,6.26h0V354Z" transform="translate(0 -0.01)"/>
+	  <path class="cls-1" d="M1079.06,354a6.26,6.26,0,0,1-1.83,4.42l-30,30a6.26,6.26,0,0,1-10.68-4.42v-74.4c0-3.89-4.25-5.9-7.48-2.67L943.8,392.19a6.26,6.26,0,0,1-8.85,0l-22.86-22.86a6.26,6.26,0,0,1,0-8.85L997,275.54c3.45-3.45,1.08-7.48-2.67-7.48H920.54a6.26,6.26,0,0,1-4.42-10.69l30.08-30a6.25,6.25,0,0,1,4.42-1.82h122.19a6.26,6.26,0,0,1,6.26,6.26h0V354Z" transform="translate(0 -0.01)"/>
+	</svg>
+</span>			</div>
+
+			<div class="column-main-content">
+				<section class="row newsletter">
+					<div class="row__header">The TPG Newsletter</div>
+					<div class="newsletter__wrapper">
+						<div class="copy">
+							<b>BE A SMARTER TRAVELER</b>: Get points strategies, customized alerts + more						</div>
+
+						
+<form
+	action="//thepointsguy.us6.list-manage.com/subscribe/post?u=e1deb758a4e775c4e2c02fd28&amp;id=2b0b8ee2b7"
+	method="post"
+	id="mc-embedded-subscribe-form"
+	name="mc-embedded-subscribe-form"
+	class="validate"
+	target="_blank"
+	novalidate
+>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
+	<button type="submit" name="subscribe" id="mc-embedded-subscribe">Sign Up</button>
+	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e1deb758a4e775c4e2c02fd28_2b0b8ee2b7" tabindex="-1" value=""></div>
+</form>
+					</div>
+				</section>
+
+				<section class="row site_links">
+					<div class="row__header">Site</div>
+					<nav class="site__wrapper link_row">
+						<a href="https://thepointsguy.com/about/">About</a>
+<a href="https://thepointsguy.com/jobs/">Jobs at TPG</a>
+<a href="/about-us/">Team</a>
+<a href="https://thepointsguy.com/contact-us/">Contact Us</a>
+<a href="https://thepointsguy.com/guide/beginners/">Beginner&#8217;s Guide</a>
+<a href="https://thepointsguy.com/peace/">Points for Peace</a>
+					</nav>
+				</section>
+				<div class="row site_tools">
+					<div class="site_tools__wrapper">
+						<div class="row__header">Tools</div>
+						<nav class="link_row">
+							<a href="https://app.thepointsguy.com/mobile?utm_source=tpg&#038;utm_medium=referral&#038;utm_content=footer_nav&#038;utm_campaign=tpgtogo">TPG To Go</a>
+<a href="https://app.thepointsguy.com/maximizer?utm_source=tpg&#038;utm_medium=referral&#038;utm_content=footer_nav&#038;utm_campaign=maximizer">Wallet Maximizer</a>
+						</nav>
+					</div>
+				</div>
+
+				
+<section class="footer-disclosure">
+	<p>The credit card offers that appear on the website are from credit card companies from which ThePointsGuy.com receives compensation. This compensation may impact how and where products appear on this site (including, for example, the order in which they appear). This site does not include all credit card companies or all available credit card offers. Please view our <a href="/advertising-policy/">advertising policy page</a> for more information.</p>
+<p>Editorial Note: Opinions expressed here are author&#8217;s alone, not those of any bank, credit card issuer, airlines or hotel chain, and have not been reviewed, approved or otherwise endorsed by any of these entities.</p>
+</section>
+
+				<div class="row yatta desktop">
+					<span class="copy">&copy; 2017 THE POINTS GUY, LLC. ALL RIGHTS RESERVED</span>
+					<a href="https://thepointsguy.com/privacy-policy/">PRIVACY POLICY</a> | <a href="https://thepointsguy.com/terms-of-use/">TERMS OF USE</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-social-links">
+			<section class="row">
+				<div class="row__header">TPG Social</div>
+				<nav class="footer_social">
+					@thepointsguy					
+<div class="social-icons">
+			<a href="https://facebook.com/thepointsguy/" class="facebook-icon" title="Like us on Facebook">
+			<span class="icon icon-facebook">
+	<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+		<path d="M18.86.04H1.14C.534.04.04.534.04 1.14v17.72c0 .607.493 1.1 1.1 1.1h9.54v-7.714H8.084V9.24h2.596V7.023c0-2.573 1.57-3.974 3.866-3.974 1.1 0 2.044.08 2.32.117v2.688h-1.592c-1.248 0-1.49.594-1.49 1.465v1.92h2.977l-.386 3.006h-2.59v7.713h5.076c.607 0 1.1-.494 1.1-1.1V1.14c0-.607-.493-1.1-1.1-1.1" fill-rule="evenodd"/>
+	</svg>
+</span>			<span class="social_text">Facebook</span>
+		</a>
+	
+			<a href="https://www.instagram.com/thepointsguy/" class="instagram-icon" title="Follow us on Instagram">
+			<span class="icon icon-instagram">
+	<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+		<path d="M17.5 0h-15C1.12 0 0 1.12 0 2.5v15C0 18.88 1.12 20 2.5 20h15c1.38 0 2.5-1.12 2.5-2.5v-15C20 1.12 18.88 0 17.5 0zM6.148 9.585c.004-.04.012-.078.018-.117.013-.096.027-.193.047-.287l.033-.122c.022-.09.046-.18.074-.266l.044-.12c.032-.085.064-.17.1-.25l.018-.044h.004C7.1 7.048 8.44 6.126 10 6.126c1.56 0 2.9.922 3.514 2.25h.004l.017.042c.037.082.07.166.1.25.016.04.032.08.045.122.03.087.052.176.074.266.01.042.024.082.033.125.02.097.034.194.047.29.006.04.014.078.018.117.015.137.023.275.023.415 0 2.14-1.735 3.876-3.875 3.876-2.14 0-3.875-1.735-3.875-3.875 0-.14.008-.277.023-.414zM17.75 16.75c0 .552-.448 1-1 1H3.25c-.552 0-1-.448-1-1V8.375h1.843c-.142.518-.218 1.063-.218 1.625 0 3.383 2.742 6.125 6.125 6.125s6.125-2.742 6.125-6.125c0-.563-.076-1.107-.218-1.625h1.843v8.375zm0-11.5c0 .552-.448 1-1 1h-2c-.552 0-1-.448-1-1v-2c0-.552.448-1 1-1h2c.552 0 1 .447 1 1v2z" fill="#0F1568" fill-rule="evenodd"/>
+	</svg>
+</span>			<span class="social_text">Instagram</span>
+		</a>
+	
+			<a href="http://snapchat.com/add/thepointsguy" class="snapchat-icon" title="Add us on Snapchat">
+			<span class="icon icon-snapchat circle">
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23">
+		<path fill-rule="evenodd" d="M11.97 22.742c-.04.003-.08.005-.12.005-1.39 0-2.285-.643-3.15-1.265-.595-.43-1.158-.834-1.822-.947-.324-.054-.646-.082-.957-.082-.56 0-1 .088-1.32.153-.19.04-.36.072-.49.072s-.28-.03-.34-.25c-.05-.19-.09-.375-.13-.554-.1-.46-.17-.743-.36-.772-2.21-.348-2.84-.82-2.98-1.157-.02-.048-.03-.096-.03-.144-.01-.12.08-.24.21-.26 3.396-.57 4.918-4.1 4.98-4.25.215-.44.255-.81.128-1.12-.233-.56-.993-.8-1.495-.96l-.33-.11c-1.005-.4-1.09-.82-1.05-1.03.063-.36.54-.61.92-.61.103 0 .195.02.273.06.45.22.86.33 1.21.33.487 0 .7-.21.725-.232l-.042-.73c-.1-1.633-.23-3.662.28-4.82C7.58.57 10.808.3 11.76.3l.418-.003c1.01 0 4.245.27 5.768 3.744.508 1.16.382 3.19.28 4.83l-.003.07c-.013.23-.027.45-.038.66.024.03.22.22.66.24.333-.01.717-.12 1.14-.32.123-.06.26-.07.353-.07.143 0 .287.03.407.08.35.13.572.37.577.62.003.24-.176.6-1.057.96-.09.04-.208.08-.33.12-.505.16-1.264.407-1.497.966-.127.307-.087.68.12 1.107.07.165 1.59 3.695 4.987 4.264.125.02.215.134.208.263-.002.05-.013.1-.034.143-.14.33-.77.806-2.98 1.15-.18.03-.25.27-.36.77-.04.18-.08.36-.14.55-.05.167-.15.24-.32.24-.15 0-.31-.02-.52-.06-.38-.076-.8-.145-1.33-.145-.32 0-.64.028-.96.08-.66.115-1.23.52-1.82.948-.87.627-1.76 1.27-3.16 1.27-.06 0-.12 0-.18-.004z"/>
+	</svg>
+</span>			<span class="social_text">Snapchat</span>
+		</a>
+	
+			<a href="https://twitter.com/thepointsguy/" class="twitter-icon" title="Follow us on Twitter">
+			<span class="icon icon-twitter">
+	<svg xmlns="http://www.w3.org/2000/svg" width="25" height="21">
+		<path fill-rule="evenodd" d="M7.71 20c-2.84 0-5.484-.833-7.71-2.26.394.046.794.07 1.2.07 2.357 0 4.526-.804 6.247-2.153-2.2-.04-4.06-1.495-4.7-3.494.308.06.624.09.948.09.46 0 .903-.06 1.325-.176C2.72 11.615.985 9.582.985 7.145V7.08c.678.378 1.454.604 2.28.63-1.35-.902-2.24-2.44-2.24-4.187 0-.92.25-1.786.682-2.528C4.187 4.038 7.895 6.04 12.075 6.25c-.085-.368-.13-.752-.13-1.146 0-2.778 2.252-5.03 5.03-5.03 1.448 0 2.755.61 3.673 1.588 1.145-.225 2.222-.644 3.194-1.22-.376 1.174-1.173 2.16-2.212 2.783 1.018-.122 1.987-.392 2.89-.792-.675 1.008-1.528 1.894-2.51 2.604.01.215.014.432.014.65C22.024 12.335 16.964 20 7.71 20"/>
+	</svg>
+</span>			<span class="social_text">Twitter</span>
+		</a>
+	</div>
+				</nav>
+			</section>
+
+			<div class="yatta mobile">
+				<span class="copy">&copy; 2017 THE POINTS GUY, LLC. ALL RIGHTS RESERVED</span>
+				<a href="https://thepointsguy.com/privacy-policy/">PRIVACY POLICY</a> | <a href="https://thepointsguy.com/terms-of-use/">TERMS OF USE</a>
+			</div>
+		</div>
+
+			</section>
+</footer>
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="thepointsguy.com"></div>
+</div>
+<script data-cfasync="false">
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.setAttribute('data-cfasync', 'false'); e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+		<!-- Adobe DTM for footer -->
+		<script type="text/javascript">
+
+			// Output analytics data
+			var dtmAnalyticsData = {"channel":"CARDS","url":"\/cards\/","pageName":"Cards"};
+
+			// Build an array of query vars
+			var queryVars = [],
+				sPageURL = decodeURIComponent(window.location.search.substring(1)),
+				sURLVariables = sPageURL.split('&'),
+				sParameterName,
+				i;
+
+			for (i = 0; i < sURLVariables.length; i++) {
+				sParameterName = sURLVariables[i].split('=');
+
+				if ( undefined !== sParameterName[1] ) {
+					queryVars[sParameterName[0]] = sParameterName[1];
+				}
+			}
+
+			// Buick campaign vars
+			var campaign = [];
+
+			// Collect UTM vars
+			if (undefined !== queryVars['utm_source']) {
+				campaign.push(queryVars['utm_source']);
+			}
+
+			if (undefined !== queryVars['utm_campaign']) {
+				campaign.push(queryVars['utm_campaign']);
+			}
+
+			// Build UTM vars
+			campaign = campaign.join('|');
+
+			if ( campaign === '' ) {
+				if ('' === document.referrer) {
+					campaign = 'direct traffic||||';
+				} else if (document.referrer.indexOf('google.com') >= 0 ) {
+					campaign = 'google|seo|||';
+				}else if ( document.referrer.indexOf('facebook.com') >= 0 ) {
+					campaign = 'facebook||||';
+				} else if ( document.referrer.indexOf('twitter.com') >= 0 || document.referrer.indexOf('t.co') >= 0 ) {
+					campaign = 'twitter||||';
+				}
+			}
+
+			// Apend campaign value to analytics data
+			dtmAnalyticsData.campaign = campaign;
+
+			// Apend campaign value to analytics data
+			if (undefined !== queryVars['tid']) {
+				dtmAnalyticsData.tid = queryVars['tid'];
+			}
+
+			// Context location
+			if (undefined !== queryVars['context']) {
+				dtmAnalyticsData.eVar7 = queryVars['context'];
+			}
+
+			// Store OID as purchaseId
+			if (window.oid) {
+				dtmAnalyticsData.purchaseId = window.oid;
+			}
+
+			_satellite.pageBottom();
+		</script>
+		
+<img style="display:none" id="nanigans-pixel" src="" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16558039-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/plugins/photonfill/vendor/picturefill.min.js?ver=2.3.1'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/plugins/photonfill/vendor/lazysizes.min.js?ver=1.2.3rc1'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/global.4a1cd35.bundle.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/search.4a1cd35.bundle.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/card-search.4a1cd35.bundle.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/archive.4a1cd35.bundle.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"38cce5be73","applicationID":"39153354","transactionName":"Y1JVYEdVCERZUBEKX1oYdldBXQlZF0QXAkBEUkU=","queueTime":0,"applicationTime":347,"atts":"TxVWFg9PG0o=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

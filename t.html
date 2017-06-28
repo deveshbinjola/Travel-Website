@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html class="production">
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"08aec3aa1d","applicationID":"7495838","transactionName":"IFcLRUtcXVpcFBsXQQJMDFIWUlNZTBI=","queueTime":0,"applicationTime":49,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1039.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  <title>About Us | AwardAce</title>
+  <meta name="description" content="Find out more about who AwardAce is." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FACEBOOK -->
+  <meta property="fb:app_id" content="793394530777098"/>
+  <meta property="og:site_name" content="AwardAce"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="About Us | AwardAce" />
+  <meta property="og:description" content="Find out more about who AwardAce is." />
+  <meta property="og:url" content="" />
+    <meta property="og:image" content="http://cdn.awardace.com/assets/awardace-011f9856216148113f0cf4e95165051020d366903d3cd49ecfddb15548ff6dac.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="About Us | AwardAce">
+  <meta name="twitter:description" content="Find out more about who AwardAce is.">
+  <link rel="icon" href="http://cdn.awardace.com/assets/favicon-a687c19dfa08ac938d14ec1adb8b5491f979a2e09850a376b1976292e8d3bd05.png">
+  <!-- GOOGLE -->
+  <link rel="author" href="https://plus.google.com/103264554665003022297"/>
+    <link rel="stylesheet" media="all" href="http://cdn.awardace.com/assets/static-f29601156476b3ea2c0c9a2b50ace65ec47364926fcd944ea9a7065bfc94faea.css" />
+  <script src="http://cdn.awardace.com/assets/static-fb1f853f58484d03e70e6f10ecbd762242d93633517fae5f071add43a479dcbb.js"></script>
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: ['Roboto:300,300italic,400,500:latin'] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38303358-7', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script src="//cdn.optimizely.com/js/4396330069.js"></script>
+  <!-- <script src="//load.sumome.com/" data-sumo-site-id="a0d60dd982e4a59ae0a238143a58398468c31ae0e4b6ae86151b0c531b664498" async="async"></script> -->
+
+  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("59a018aeeb3780d93dfaf776abfd41a3");</script><!-- end Mixpanel -->
+
+</head>
+
+<body class="">
+    <header class="l-header">
+  <nav class="l-nav flex flex-nowrap ">
+    <a class="logo" href="/">
+      <img alt="AwardAce logo" src="http://cdn.awardace.com/assets/logo_blue-fb88842442a10938335d76aebb646e7ad91e57184b2c9462c426d1bf76cf5fd9.png" />
+      <a class="expand" href="">▼</a>
+</a>    <ul class="l-nav__links">
+        <li class="top-line pos-relative">
+          <a href="/redemptions/search">Pricing Calculator</a>
+        </li>
+        <li class="top-line pos-relative">
+          <a href="/discover">Discover Destinations</a>
+        </li>
+        <li class="top-line pos-relative">
+          <a href="/programs">Program Guide</a>
+        </li>
+        <li class="top-line pos-relative">
+          <a href="/booking-guides">Booking Guides</a>
+        </li>
+        <li class="top-line pos-relative">
+          <a href="/beginners-guide">Beginner&#39;s Guide</a>
+        </li>
+        <li class="top-line pos-relative">
+          <a class="toggle" href=" ">More ▾</a>
+            <ul class="l-nav__dropdown nested bordered hide">
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="//blog.awardace.com/">Blog</a></li>
+              <li><a href="/about">About</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="l-nav__drawer hidden">
+        <li class="top-line pos-relative">
+          <a href="/redemptions/search">Pricing Calculator</a>
+        </li>
+        <li class="top-line pos-relative">
+          <a href="/discover">Discover Destinations</a>
+        </li>
+        <li class="top-line pos-relative">
+          <a href="/programs">Program Guide</a>
+        </li>
+        <li class="top-line pos-relative">
+          <a href="/booking-guides">Booking Guides</a>
+        </li>
+        <li class="top-line pos-relative">
+          <a href="/beginners-guide">Beginner&#39;s Guide</a>
+        </li>
+        <li class="top-line pos-relative">
+          <a class="toggle" href=" ">More ▾</a>
+            <ul class="l-nav__dropdown nested bordered hide">
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="//blog.awardace.com/">Blog</a></li>
+              <li><a href="/about">About</a></li>
+            </ul>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+  <script>
+  var AwardAce = AwardAce || {};
+  AwardAce.Context = {
+    location: 'static'
+  }
+</script>
+
+  <script>
+  if (AwardAce.Util.getSession('disableAlert') === 'true') {
+    $('.p-alert').remove();
+  }
+</script>
+
+  <main class="">
+    <div class="m-about__hero">
+</div>
+<div class="m-about">
+  <div class="m-about__container">
+    <header>
+      <ol class="p-breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList"><li property="itemListElement" typeof="ListItem"><a typeof="WebPage" property="item" href="/"><span property="name">Home</span></a><meta property="position" content="1"></li> <li property="itemListElement" typeof="ListItem"><a typeof="WebPage" property="item" href="/about"><span property="name">About Us</span></a><meta property="position" content="2"></li></ol>
+      <h1>About Us</h1>
+    </header>
+    <p>Our goal at AwardAce is to make miles and points more accessible for all.</p>
+    <p>Our suite of tools to can help you understand award programs, compare pricing and or find new destinations.</p>
+    <br>
+    <h3>Team</h3>
+    <div class="m-about__team bordered flex flex-nowrap">
+      <div class="image pos-relative">
+        <div class="pos-absolute">
+          <div class="lazyload bg-cover" data-original="https://scontent-lga3-1.cdninstagram.com/l/t51.2885-15/s640x640/sh0.08/e35/c80.0.919.919/13385783_655801567901148_1270203212_n.jpg?ig_cache_key=MTI2NTU1NjY3NzE4MjQzOTEwNw%3D%3D.2.c"></div>
+        </div>
+      </div>
+      <div class="body padding-left-right">
+        <h4>Huge Ma</h4>
+        <span class="font-sm font-uppercase">Co-Founder and CEO</span>
+        <ul class="social font-md">
+          <li><a target="_blank" href="https://twitter.com/huge_ma"><i class="fa fa-twitter"></i></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/huge.ma/"><i class="fa fa-instagram"></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/hugema"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <ul>
+          <li>Favorite Airline: Cathay Pacific</li>
+          <li>Favorite Redemption: New York to 5 Asian cities in Business for 105K ANA miles</li>
+          <li>Favorite City: Tokyo</li>
+        </ul>
+      </div>
+    </div>
+    <div class="m-about__team bordered flex flex-nowrap">
+      <div class="image pos-relative">
+        <div class="pos-absolute">
+          <div class="lazyload bg-cover" data-original="https://scontent-iad3-1.cdninstagram.com/t51.2885-15/e35/13298024_1286515148080036_1651183202_n.jpg?ig_cache_key=MTI1NzI5MzQ4Njk5MjIxMTc4Ng%3D%3D.2"></div>
+        </div>
+      </div>
+      <div class="body padding-left-right">
+        <h4>Yu Zhang</h4>
+        <span class="font-sm font-uppercase">Co-Founder and CMO</span>
+        <ul class="social font-md">
+          <li><a target="_blank" href="https://www.instagram.com/yuzhang_"><i class="fa fa-instagram"></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/yuzhang1"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <ul>
+          <li>Favorite Airport: Hong Kong International</li>
+          <li>Favorite Program: <a href="/programs/55-rapid-rewards">Southwest Rapid Rewards</a></li>
+          <li>Favorite City: Valparaiso</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <h3>Questions?</h3>
+    <p>Please find us at <a href="mailto:support@awardace.com">support@awardace.com</a>.</p>
+    <h3>Press</h3>
+    <ul class="m-about__press">
+      <li>
+  <a target="_blank" href="http://twocents.lifehacker.com/pick-the-best-frequent-flier-program-with-this-massive-1762507238&quot;">Pick the Best Frequent Flier Program With This Massive Guide</a><br>
+  <span class="font-sm font-uppercase">Lifehacker</span>
+</li>
+<li>
+  <a target="_blank" href="http://frequentmiler.boardingarea.com/2016/03/11/the-best-award-price-finder-case-study-part-1/">The best award price finder. Case study part 1</a><br>
+  <span class="font-sm font-uppercase">FrequentMiler</span>
+</li>
+<li>
+  <a target="_blank" href="https://skift.com/2016/06/13/5-new-travel-startups-5">5 New Travel Startups Responding to Brands’ Biggest Challenges in 2016</a><br>
+  <span class="font-sm font-uppercase">Skift</span>
+</li>
+<li>
+  <a target="_blank" href="http://roadwarriorvoices.com/2015/10/08/this-web-tool-takes-the-guesswork-out-of-award-booking">This web tool takes the guesswork out of award booking</a><br>
+  <span class="font-sm font-uppercase">USA Today – Road Warrior Voices</span>
+</li>
+<li>
+  <a target="_blank" href="http://freequentflyerbook.com/blog/2015/10/6/two-new-tools-to-help-plan-airline-redemptions">Two new tools to help plan airline redemptions</a><br>
+  <span class="font-sm font-uppercase">Freequent Flyer Book</span>
+</li>
+<li>
+  <a target="_blank" href="http://twocents.lifehacker.com/awardace-compares-flight-prices-in-rewards-miles-1725509512&quot;">AwardAce Compares Flight Prices in Rewards Miles</a><br>
+  <span class="font-sm font-uppercase">Lifehacker</span>
+</li>
+<li>
+  <a target="_blank" href="http://skift.com/2016/01/25/5-new-travel-startups-building-businesses-around-travel-hacking/#1">5 New Travel Startups Building Businesses Around Travel Hacking</a><br>
+  <span class="font-sm font-uppercase">Skift</span>
+</li>
+
+    </ul>
+    <h3>Social</h3>
+    <p>Follow us for the latest tips and tricks!</p>
+    <ul class="p-social-link">
+      <li><a target="_blank" class="instagram" href="https://instagram.com/awardace">
+        <i class="fa fa-instagram"></i> Instagram
+      </a></li>
+      <li><a target="_blank" class="facebook" href="https://www.facebook.com/awardace">
+        <i class="fa fa-facebook"></i> Facebook
+      </a></li>
+      <li><a target="_blank" class="twitter" href="https://twitter.com/awardace">
+        <i class="fa fa-twitter"></i> Twitter
+      </a> </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="p-spinner__wrapper pos-absolute flex hide">
+  <p class="p-spinner__text font-uppercase text-center font-md">Searching Award Options</p>
+  <div class="p-spinner"></div>
+</div>
+
+  </main>
+    <footer class="l-footer ">
+  <div class="l-footer__container flex justify-between">
+    <div class="l-footer__column social logo">
+      <a href="/">
+        <img src="http://cdn.awardace.com/assets/logo_white-30f21dcd459a5671bd210228a958b383f2aed281d77d0e817c18f4564e9e99b2.png" alt="Logo white 30f21dcd459a5671bd210228a958b383f2aed281d77d0e817c18f4564e9e99b2" />
+</a>      <ul class="flex">
+        <li><a target="_blank" href="https://www.facebook.com/awardace"><i class="fa fa-facebook"></i></a></li>
+        <li><a target="_blank" href="https://twitter.com/awardace"><i class="fa fa-twitter"></i></a></li>
+        <li><a target="_blank" href="https://instagram.com/awardace"><i class="fa fa-instagram"></i></a></li>
+        <li><a target="_blank" href="https://plus.google.com/103264554665003022297"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+    <div class="l-footer__column links font-sm">
+      <ul class="flex">
+      <li>FEATURES</li>
+          <li><a href="/redemptions/search">Pricing Calculator</a></li>
+          <li><a href="/discover">Discover Destinations</a></li>
+          <li><a href="/programs">Program Guide</a></li>
+          <li><a href="/booking-guides">Booking Guides</a></li>
+          <li><a href="/beginners-guide">Beginner&#39;s Guide</a></li>
+      </ul>
+    </div>
+    <div class="l-footer__column links font-sm">
+      <ul class="flex">
+        <li>MORE</li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="//blog.awardace.com/">Blog</a></li>
+          <li><a href="/about">About</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="l-footer__column copyright text-left">
+      <div class="copyright font-sm">
+        <a href="/release-notes">v1.5.0; Nov 9, 2016</a>
+        <br>
+        <br>
+        <span> © AwardAce, Inc.</span>
+        <br>
+        <br>
+        <a href="https://mixpanel.com/f/partner" rel="nofollow"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
