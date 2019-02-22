@@ -27,28 +27,30 @@
     <link rel="stylesheet" type="text/css" href="header2.css">
     <link rel="stylesheet" type="text/css" href="test1.css">
     <link rel="stylesheet" type="text/css" href="new.css">
-    <title>BrightTalk Technical Review</title>
+    <title>Customer Product Analytics</title>
     <link href="blog.css" rel="stylesheet">
   </head>
   <body>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '656115341234604',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-    FB.AppEvents.logPageView();
-  };
+<style>
+<table id="tablePreview" class="table table-striped table-borderless">
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+    border-collapse: collapse;
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "http://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+</style>
 
 <!-- Header-->
 <nav class="nav navbar-inverse">
@@ -74,7 +76,7 @@
            
             <section class="home">
       <img
-      src="http://thetravelstudent.com/Image/build.png"
+      src="Image/build.png"
       class="background-image"
     />
   
@@ -177,37 +179,19 @@ function sortTable() {
 
  <!-- Footer -->
     <footer class="footer-distributed">
-      <div class="footer-left">
-        <h3>The<span>TravelStudent</span></h3>
-
-        <p class="footer-links">
-          <a href="index">Home</a>
-          <a href="students">Beginners  </a>
-          <a href="top"> Credit Cards  </a>
-          <a href="travelreports"> Travel Reports  </a>       
-          <a href="about"> About Us</a>
-        </p>
-
-        <p class="footer-company-name">The Travel Student&copy; 2017</p>
-      </div>
+      
 
       <div class="footer-center">
       <p class="footer-company-about">
-        <span><b>Follow Us</b></span>
-          <a href="http://www.instagram.com/deveshbinjola"><i class="fa fa-instagram"></i></a>
-          <a href="http://www.facebook.com/thetravelstudent"><i class="fa fa-facebook"></i></a>
-          <a href="http://www.twitter.com/thtravelstudent"><i class="fa fa-twitter"></i></a>
-          <a href="http://feeds.feedburner.com/TheTravelStudent"><i class="fa fa-rss"></i></a>
-        </p><br>
+        <h3>Rocket Build 2019</span></h3>
+
+        
+
+        <p class="footer-company-name">Rocket Software Inc.&copy; 2019</p>
           </div>
       </div>
 
-      <div class="footer-right">
-        <p class="footer-company-about">
-          <span>Disclaimer</span>
-          The opinions expressed here are author's alone, not those of any bank, credit card issuer, airlines or hotel chain, and have not been reviewed, approved or otherwise endorsed by any of these entities. This blog is entirely made to help students and other people.
-        </p>
-      </div>
+     
 
     </footer>
 
