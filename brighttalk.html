@@ -104,72 +104,89 @@
         <div class="article-header-wrapper">
                                     
             <h1></h1> 
-          <div class="title">BrightTalk Technical Review</div>
-            <div class="meta">
-              <div class="tagline"><a href="http://thetravelstudent.com/about" title="TheTravelStudent"><span class="tagline-photo"><img alt='' src='http://thetravelstudent.com/Image/devesh.jpg' class='avatar avatar-30 photo' height='30' width='30' /></span></a>The Travel Student</a></p> </div>
- <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>  
-</div>
+          <div class="title">Customer Product Analytics</div>
+            
 </div>
 </div>    
 </div>
 </div>
 </section>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8 blog-main">
 <br>
-<p>Here is an exercise from brighttalk's interview process.</p>
+<br>
+<button type="button" onclick="loadXMLDoc()">Show the table</button><button onclick="sortTable()">Sort the table</button>
+<br><br>
+<table id="demo"></table>
 
-            <br>
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "cd_catalog.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Task</th><th>Date</th><th>Count</th></tr>";
+  var x = xmlDoc.getElementsByTagName("CD");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
 
-            
-<div class="container">
-  <button><a href="https://www.brighttalk.com/webcast/15729/268527"><h2>Checkout my Live Webinar</h2></a></button>
-  <br><br>
-    <button><a href="https://www.brighttalk.com/webcast/15729/268527?utm_source=BrightTALK+Tech+Evaluation+%28Devesh%29&utm_medium=brighttalk&utm_campaign=268527"><h2>Checkout my Recorded Webinar</h2></a></button>
-
-</div> <br>
-  <h3><a href="exercise.docx" target="_blank">Here is the exercise document</a></h3>
- 
-
-            <br>
-  <h2>My Experience</h2>
-  <p>
-    It was a nice experience. The features are great on the live webinar like online votes and questions that can be asked by viewers and it pops up for the presenters. The join.me screen sharing is also great. I really liked the application.
-  </p>
-  
-
-          <nav>
-            <ul class="pager">
-              <li><a href="post19">Previous</a></li>
-              <li><a href="post21">Next</a></li>
-            </ul>
-          </nav>
-<div id="disqus_thread"></div>
-
-
+<script>
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("demo");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+</script>
     
         </div><!-- /.blog-main -->
 
-        <div class="col-sm-4 blog-sidebar">
-<br>
-        <div class="sidebar-module sidebar-module-inset">
-        <form style="padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=TheTravelStudent', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Enter your email address:</p><p><input type="text" style="width:180px" name="email"/></p><input type="hidden" value="TheTravelStudent" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /><p>Delivered by <a href="https://feedburner.google.com" target="_blank">FeedBurner</a></p></form>
-        </div>
 
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>The main purpose of this website is to tell people how they can Travel around the world at a minimum price using points and miles and other useful offers. Also helping out students in building and understanding credit and do things that you would have never imagined.</p>
-          </div>
-        </div><!-- /.blog-sidebar -->
 
       </div><!-- /.row -->
     </div><!-- /.container -->
