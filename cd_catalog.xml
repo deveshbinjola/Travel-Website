@@ -1,38 +1,51 @@
 <CATALOG>
 <CD>
-<Date>20190222</Date>
-    	<AddrSpace>HLO21G25</AddrSpace>
-		<Task>STC</Task>
-		<Count>5</Count>
+<TITLE>20190222</TITLE>
+<ARTIST>HLO21G25</ARTIST>
+<COUNTRY>STC</COUNTRY>
+<COMPANY>Columbia</COMPANY>
+<PRICE>10.90</PRICE>
+<YEAR>5</YEAR>
 </CD>
 <CD>
-<Date>20190222</Date>
-		<AddrSpace>HLO21G25</AddrSpace>
-		<Task>ConstLoad</Task>
-		<Count>10</Count>
+<TITLE>20190222</TITLE>
+<ARTIST>HLO21G25</ARTIST>
+<COUNTRY>ConstLoad</COUNTRY>
+<COMPANY>CBS Records</COMPANY>
+<PRICE>9.90</PRICE>
+<YEAR>10</YEAR>
 </CD>
 <CD>
-<Date>20190222</Date>
-		<AddrSpace>HLO21G25<AddrSpace>
-		<Task>ImageCopy</Task>
-		<Count>6</Count>
+<TITLE>20190222</TITLE>
+<ARTIST>HLO21G25</ARTIST>
+<COUNTRY>ImageCopy</COUNTRY>
+<COMPANY>RCA</COMPANY>
+<PRICE>9.90</PRICE>
+<YEAR>6</YEAR>
 </CD>
 <CD>
-<Date>20190222</Date>
-		<AddrSpace>HLO21G25</AddrSpace>
-		<Task>HALoad</Task>
-		<Count>3</Count>
+<TITLE>20190222</TITLE>
+<ARTIST>HLO21G25</ARTIST>
+<COUNTRY>HALoad</COUNTRY>
+<COMPANY>Virgin records</COMPANY>
+<PRICE>10.20</PRICE>
+<YEAR>3</YEAR>
 </CD>
 <CD>
-<Date>20190221</Date>
-		<AddrSpace>HLO21G25</AddrSpace>
-		<Task>DualLoad</Task>
-		<Count>5</Count>
+<TITLE>20190221</TITLE>
+<ARTIST>HLO21G25</ARTIST>
+<COUNTRY>DualLoad</COUNTRY>
+<COMPANY>BMG</COMPANY>
+<PRICE>9.90</PRICE>
+<YEAR>5</YEAR>
 </CD>
 <CD>
-<Date>20190221</Date>
-		<AddrSpace>HLO21G25</AddrSpace>
-		<Task>STC</Task>
-		<Count>3</Count>
+<TITLE>20190221</TITLE>
+<ARTIST>HLO21G25</ARTIST>
+<COUNTRY>STC</COUNTRY>
+<COMPANY>Polydor</COMPANY>
+<PRICE>10.90</PRICE>
+<YEAR>3</YEAR>
 </CD>
+
 </CATALOG>

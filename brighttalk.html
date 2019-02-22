@@ -103,13 +103,13 @@ function myFunction(xml) {
   var x = xmlDoc.getElementsByTagName("CD");
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
-    x[i].getElementsByTagName("Date")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
     "</td><td>" +
-    x[i].getElementsByTagName("AddrSpace")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
     "</td><td>" +
-    x[i].getElementsByTagName("Task")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue +
     "</td><td>" +
-    x[i].getElementsByTagName("Count")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue +
     "</td></tr>";
   }
   document.getElementById("demo").innerHTML = table;
