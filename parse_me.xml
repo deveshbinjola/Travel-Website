@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RBuild> 
+	<Date>20190222</Date>
+    	<AddrSpace>HLO21G25</AddrSpace>
+		<Task>STC</Task>
+		<Count>5</Count>
+	<Date>20190222</Date>
+		<AddrSpace>HLO21G25</AddrSpace>
+		<Task>ConstLoad</Task>
+		<Count>10</Count>
+	<Date>20190222</Date>
+		<AddrSpace>HLO21G25<AddrSpace>
+		<Task>ImageCopy</Task>
+		<Count>6</Count>
+	<Date>20190222</Date>
+		<AddrSpace>HLO21G25</AddrSpace>
+		<Task>HALoad</Task>
+		<Count>3</Count>
+	<Date>20190221</Date>
+		<AddrSpace>HLO21G25</AddrSpace>
+		<Task>DualLoad</Task>
+		<Count>5</Count>
+	<Date>20190221</Date>
+		<AddrSpace>HLO21G25</AddrSpace>
+		<Task>STC</Task>
+		<Count>3</Count>
+</RBuild>
+

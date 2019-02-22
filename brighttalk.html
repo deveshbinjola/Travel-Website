@@ -108,23 +108,23 @@ function loadXMLDoc() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "cd_catalog.xml", true);
+  xmlhttp.open("GET", "parse_me.xml", true);
   xmlhttp.send();
 }
 function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
-  var table="<tr><th>Date</th><th>Address base</th><th>Task</th><th>Count</th></tr>";
+  var table="<tr><th>Date</th><th>Address Space</th><th>Task</th><th>Count</th></tr>";
   var x = xmlDoc.getElementsByTagName("CD");
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
-    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("Date")[0].childNodes[0].nodeValue +
     "</td><td>" +
-    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("AddrSpace")[0].childNodes[0].nodeValue +
     "</td><td>" +
-    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("Task")[0].childNodes[0].nodeValue +
     "</td><td>" +
-    x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("Count")[0].childNodes[0].nodeValue +
     "</td></tr>";
   }
   document.getElementById("demo").innerHTML = table;
