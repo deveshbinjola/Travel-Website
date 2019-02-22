@@ -42,18 +42,18 @@ function loadXMLDoc() {
 function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
-  var table="<tr><th>Task</th><th>Date</th><th>Count</th></tr>";
+  var table="<tr><th>Date</th><th>Address base</th><th>Task</th><th>Count</th></tr>";
   var x = xmlDoc.getElementsByTagName("CD");
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
     x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
     "</td><td>" +
+    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue +
+    "</td><td>" +
     x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
     "</td><td>" +
     x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue +
     "</td></tr>";
-  }
-  document.getElementById("demo").innerHTML = table;
 }
 </script>
 

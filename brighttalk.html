@@ -58,32 +58,12 @@
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
                             <span class="fa fa-bars"></span>
                         </button>
-                            <a href="http://thetravelstudent.com" class="navbar-brand">The Travel Student</a>
+                            <a href="http://thetravelstudent.com" class="navbar-brand">Rocket Software Inc.</a>
 
                         </div>
 
-                        <div class="collapse navbar-collapse navbar-right" id="mynavbar">
-                         
-                        <ul class="nav navbar-nav">
-
-                            <li><a href="http://thetravelstudent.com/students">Students</a></li>
-                            <li class="dropdown"><a href="http://thetravelstudent.com/top">Credit cards <b class="caret"></b></a>
-                              <ul class="dropdown-menu">
-                               <li><a href="http://thetravelstudent.com/airline">Airline Miles</a></li>
-                             <li role="separator" class="divider"></li>
-                            <li><a href="http://thetravelstudent.com/cashback">Cashback</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="http://thetravelstudent.com/hotel">Hotel Points</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="http://thetravelstudent.com/points">Other Points</a></li>
-                            </ul>
-                            </li>
-                            <li><a href="http://thetravelstudent.com/travelreports">Reviews</a></li>
-                            <li><a href="http://thetravelstudent.com/deals">Deals</a></li>
-
-                            <li><a href="http://thetravelstudent.com/about">About</a></li>
-                        </ul>
-
+                        
+                        
                         </div>
     
                     </div>
@@ -94,7 +74,7 @@
            
             <section class="home">
       <img
-      src="http://thetravelstudent.com/Image/googleexp.jpg"
+      src="http://thetravelstudent.com/Image/build.png"
       class="background-image"
     />
   
@@ -132,11 +112,13 @@ function loadXMLDoc() {
 function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
-  var table="<tr><th>Task</th><th>Date</th><th>Count</th></tr>";
+  var table="<tr><th>Date</th><th>Address base</th><th>Task</th><th>Count</th></tr>";
   var x = xmlDoc.getElementsByTagName("CD");
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
     x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue +
     "</td><td>" +
     x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
     "</td><td>" +
